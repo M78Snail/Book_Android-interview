@@ -20,7 +20,7 @@ Model作为单独的模块存放与data目录下
 
 ---
 
-##### MVP实现方式
+##### MVP实现方式-**View和Present**
 
 以添加或编辑任务功能模块\(addedittask\)为例
 
@@ -194,6 +194,62 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
 
     ...
 }
+```
+
+---
+
+##### MVP实现方式-Model
+
+| ![](/assets/import1.14.png) |
+| :---: |
+
+
+TasksDataSource定义了Model的回调接口和方法
+
+```java
+public interface TasksDataSource {
+
+    interface LoadTasksCallback {
+
+        void onTasksLoaded(List<Task> tasks);
+
+        void onDataNotAvailable();
+    }
+
+    interface GetTaskCallback {
+
+        void onTaskLoaded(Task task);
+
+        void onDataNotAvailable();
+    }
+
+    void getTasks(@NonNull LoadTasksCallback callback);
+
+    void getTask(@NonNull String taskId, @NonNull GetTaskCallback callback);
+
+    void saveTask(@NonNull Task task);
+
+    void completeTask(@NonNull Task task);
+
+    void completeTask(@NonNull String taskId);
+
+    void activateTask(@NonNull Task task);
+
+    void activateTask(@NonNull String taskId);
+
+    void clearCompletedTasks();
+
+    void refreshTasks();
+
+    void deleteAllTasks();
+
+    void deleteTask(@NonNull String taskId);
+}
+
+作者：zly394
+链接：http://www.jianshu.com/p/6409ef228e8b
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 
