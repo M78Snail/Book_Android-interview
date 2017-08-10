@@ -16,7 +16,7 @@
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
   * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
-  * Json有什么优劣势
+  * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
   * 动画有哪几类，各有什么特点
   * Handler、Looper消息队列模型，各部分的作用
   * 怎样退出终止App
