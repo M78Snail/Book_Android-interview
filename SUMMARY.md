@@ -28,9 +28,9 @@
   * [View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)](chapter1/viewyu-view-group-fen-lei-ff0c-zi-ding-yi-view-guo-cheng-ff1a-onmeasure-onlayout-ondraw.md)
   * Touch事件分发机制
   * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
-  * Zygote的启动过程
+  * [Zygote的启动过程](chapter1/zygotede-qi-dong-guo-cheng.md)
   * Android IPC:Binder原理
-  * HTTPS连接流程
+  * [HTTPS连接流程](chapter1/httpslian-jie-liu-cheng.md)
 * [JVM](dw.md)
   * 内存模型以及分区，需要详细到每个区放什么
   * 堆里面的分区：Eden，survival from to，老年代，各自的特点

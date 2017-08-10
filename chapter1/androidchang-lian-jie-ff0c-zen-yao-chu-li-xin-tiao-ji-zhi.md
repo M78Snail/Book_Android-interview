@@ -1,4 +1,4 @@
-#### 所谓的心跳包就是客户端定时放送简单的信息给服务器端，告诉它我还在而已。代码就是每隔几分钟发送一个固定信息给服务器端，服务器端回复一个固定信息。如果服务器端几分钟后没有收到客户端信息则视客户端断开。比如有些通信软件长时间不适用，要想知道它的状态是在线还是离线，就需要心跳包，定时发包收包。
+所谓的心跳包就是客户端定时放送简单的信息给服务器端，告诉它我还在而已。代码就是每隔几分钟发送一个固定信息给服务器端，服务器端回复一个固定信息。如果服务器端几分钟后没有收到客户端信息则视客户端断开。比如有些通信软件长时间不适用，要想知道它的状态是在线还是离线，就需要心跳包，定时发包收包。
 
 心跳包之所以叫心跳包是因为：它像心跳一样每隔固定时间发一次，以此来告诉服务器，这个客户端还活在。事实上这是为了保持长连接，至于这个包的内容，是没有什么特别规定的，不过一般都是很小的包，或者只包含包头的一个空包。
 
@@ -36,14 +36,14 @@ public void connect()  {
 private class ReceiveThread extends Thread {  
         private byte[] buf;  
         private String str = null;  
-  
+
         @Override  
         public void run() {  
             while (true) {  
                 try {  
                     // LogUtil.e(TAG, "监听中...:"+socket.isConnected());  
                     if (socket!=null && socket.isConnected()) {  
-  
+
                         if (!socket.isInputShutdown()) {  
                             BufferedReader inStream = new BufferedReader(  
                                     new InputStreamReader(  
@@ -84,13 +84,13 @@ private class ReceiveThread extends Thread {
                         if(socket!=null)  
                             LogUtil.e(TAG, "链接状态:" + socket.isConnected());  
                     }  
-  
+
                 } catch (Exception e) {  
                     LogUtil.e(TAG, "监听出错:" + e.toString());  
                     e.printStackTrace();  
                 }  
             }  
- }  
+ }
 ```
 
 **3 、 Socket 是否断开了 断开了 需要重新去连接**
@@ -111,11 +111,11 @@ public void KeepAlive() {
                 lastKeepAliveOkTime = null;  
                 socket = null;  
             }  
-  
+
         } else {  
             lastKeepAliveOkTime = Calendar.getInstance().getTime();  
         }  
-  
+
         if (!checkIsAlive()) {  
             LogUtil.e(TAG, "链接已断开,重新连接.");  
             connect();  
@@ -134,7 +134,7 @@ boolean checkIsAlive() {
             return false;  
         }  
         return true;  
-  
+
 }  
 //然后发送数据的方法  
 public void sendmessage(String msg) {  
@@ -147,7 +147,7 @@ public void sendmessage(String msg) {
                     PrintWriter outStream = new PrintWriter(new BufferedWriter(  
                             new OutputStreamWriter(socket.getOutputStream())),  
                             true);  
-  
+
                     outStream.print(msg + (char) 13 + (char) 10);  
                     outStream.flush();  
                 }  
@@ -156,9 +156,17 @@ public void sendmessage(String msg) {
         } catch (Exception e) {  
             e.printStackTrace();  
         }  
-}  
-
+}
 ```
 
+实现轮询
 
+原理  
+其原理在于在android端的程序中，让一个SERVICE一直跑在后台，在规定时间之内调用服务器接口进行数据获取。
+
+这里的原理很简单，当然实现起来也不难；
+
+然后，这个类之中肯定要做网络了数据请求，所以我们在Service中建立一个线程（因为在android系统中网络请求属于长时间操作，不能放主线程，不然会导致异常），在线程中和服务器进行通信。
+
+最后，这个逻辑写完后，我们需要考虑一个问题，如何进行在规定时间内调用该服务器，当然可以用Thread+Handler\(这个不是那么稳定\),也可以使用AlamManager+Thread（比较稳定），因为我们需要其在后台一直运行，所以可以依靠系统的Alammanager这个类来实现，Alammanager是属于系统的一个闹钟提醒类，通过它我们能实现在规定间隔时间调用，并且也比较稳定，这个service被杀后会自己自动启动服务。
 
