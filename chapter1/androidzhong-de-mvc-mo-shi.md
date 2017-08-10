@@ -79,32 +79,47 @@ public interface AddEditTaskContract {
 
 **3.AddEditTaskActivity**
 
-AddEditTaskContract是一个合同接口，其中包含了View和Presenter接口，便于查看和维护View和Presenter的功能。
+AddEditTaskActivity中创建了View的实现类AddEditTaskFragment的实例和Presenter的实现类AddEditTaskPresenter的实例，并把它们联系起来。
 
 ```java
-public interface AddEditTaskContract {
+public class AddEditTaskActivity extends AppCompatActivity {
+    ...
 
-    interface View extends BaseView<Presenter> {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.addtask_act);
 
-        void showEmptyTaskError();
+        ...
 
-        void showTasksList();
+        // 创建AddEditTaskFragment实例
+        AddEditTaskFragment addEditTaskFragment =
+                (AddEditTaskFragment) getSupportFragmentManager().findFragmentById(R.id.contentFrame);
+        String taskId = null;
+        if (addEditTaskFragment == null) {
+            addEditTaskFragment = AddEditTaskFragment.newInstance();
+            if(getIntent().hasExtra(AddEditTaskFragment.ARGUMENT_EDIT_TASK_ID)) {
+                taskId = getIntent().getStringExtra(
+                        AddEditTaskFragment.ARGUMENT_EDIT_TASK_ID);
+                actionBar.setTitle(R.string.edit_task);
+                Bundle bundle = new Bundle();
+                bundle.putString(AddEditTaskFragment.ARGUMENT_EDIT_TASK_ID, taskId);
+                addEditTaskFragment.setArguments(bundle);
+            } else {
+                actionBar.setTitle(R.string.add_task);
+            }
+            ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),
+                    addEditTaskFragment, R.id.contentFrame);
+        }
 
-        void setTitle(String title);
-
-        void setDescription(String description);
-
-        boolean isActive();
+        // 创建Presenter实例，传入Model实例和AddEditTaskFragment实例，建立View和Presenter之间的联系
+        new AddEditTaskPresenter(
+                taskId,
+                Injection.provideTasksRepository(getApplicationContext()),
+                addEditTaskFragment);
     }
 
-    interface Presenter extends BasePresenter {
-
-        void createTask(String title, String description);
-
-        void updateTask( String title, String description);
-
-        void populateTask();
-    }
+    ...
 }
 ```
 
