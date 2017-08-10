@@ -6,16 +6,16 @@
   * [Acitivty四种启动模式与特点](chapter1/12.md)
   * [Activity缓存方法](chapter1/activityhuan-cun-fang-fa.md)
   * [Service与Activity通信](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
-  * [怎么保证service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
+  * [怎么保证Service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
   * [Thread、AsycTask、IntentService的使用场景与特点](chapter1/threadasyctaskintentservicede-shi-yong-chang-jing-yu-te-dian.md)
-  * View绘制流程
-  * Android的数据存储形式
-  * Sqlite的基本操作
-  * [Android中的MVC模式](chapter1/androidzhong-de-mvc-mo-shi.md)
-  * Merge、ViewStub的作用
+  * [View绘制流程](chapter1/viewhui-zhi-liu-cheng.md)
+  * [Android的数据存储形式](chapter1/androidde-shu-ju-cun-chu-xing-shi.md)
+  * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
+  * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
+  * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
   * Json有什么优劣势
   * 动画有哪几类，各有什么特点
   * Handler、Looper消息队列模型，各部分的作用
