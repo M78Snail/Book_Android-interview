@@ -123,5 +123,39 @@ public class AddEditTaskActivity extends AppCompatActivity {
 }
 ```
 
+**4.AddEditTaskFragment**
+
+AddEditTaskFragment实现了AddEditTaskContract接口中的View接口，其中有一个Presenter实例，在onResume方法中调用Presenter的start方法。
+
+```
+public class AddEditTaskFragment extends Fragment implements AddEditTaskContract.View {
+
+    private AddEditTaskContract.Presenter mPresenter;
+
+    public static AddEditTaskFragment newInstance() {
+        return new AddEditTaskFragment();
+    }
+
+    public AddEditTaskFragment() {
+        // Required empty public constructor
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // 调用start方法
+        mPresenter.start();
+    }
+
+    // 重写setPresenter方法
+    @Override
+    public void setPresenter(@NonNull AddEditTaskContract.Presenter presenter) {
+        mPresenter = checkNotNull(presenter);
+    }
+
+    ...
+}
+```
+
 
 
