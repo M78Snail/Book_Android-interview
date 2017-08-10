@@ -2,9 +2,7 @@
 
 > 当Activity通过调用bindService\(Intent service, ServiceConnection conn,int flags\),我们可以得到一个Service的一个对象实例，然后我们就可以访问Service中的方法
 
-```
-**新建一个Service类**
-```
+**    **新建一个Service类
 
 ```java
 public class MsgService extends Service {  
