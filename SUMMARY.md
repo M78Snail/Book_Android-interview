@@ -57,23 +57,6 @@
   * 字符串操作
   * Hash表的hash函数，冲突解决方法有哪些
   * 二叉树、B+树、AVL树、红黑树、哈夫曼树
-* [算法](suan-fa.md)
-  * [冒泡排序](suan-fa/ge-zhong-pai-xu-ff1a-mao-pao-3001-xuan-ze-3001-cha-ru-3001-xi-er-3001-gui-bing-3001-kuai-pai-3001-dui-pai-3001-tong-pai-3001-ji-shu-de-yuan-li-3001-ping-jun-shi-jian-fu-za-du-3001-zui-huai-shi-jian-fu-za-du-3001-kong-jian-fu-za-du-3001-shi-fou-wen-ding.md)
-  * 选择排序
-  * 插入排序
-  * [希尔排序](suan-fa/xi-er.md)
-  * 归并排序
-  * 快速排序
-  * 堆排序
-  * 桶排序
-  * 基数排序
-  * 二分查找，与变种二分查找
-  * 二叉树的前中后续遍历：递归与非递归写法，层序遍历算法
-  * 图的BFS与DFS算法，最小生成树prim算法与最短路径Dijkstra算法
-  * KMP算法
-  * 排列组合问题
-  * 动态规划、贪心算法、分治算法
-  * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
   * TCP与UDP的区别
