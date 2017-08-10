@@ -66,7 +66,7 @@ ViewStub的xml文件设置如下：
     android:inflatedId="@+id/my_view"  
     android:layout_width="wrap_content"  
     android:layout_height="wrap_content"  
-    android:layout="@layout/view_view_stub" /> 
+    android:layout="@layout/view_view_stub" />
 ```
 
 其中，inflateId属性表示ViewStub被inflate后重新被赋予的id值，layout属性指定了调用inflate方法时inflate的具体布局。
@@ -75,7 +75,7 @@ ViewStub的xml文件设置如下：
 
 ```java
 ViewStub viewStub = (ViewStub)findViewById(R.id.view_stub);  
-viewStub.inflate(); 
+viewStub.inflate();
 ```
 
 值得注意的是：
