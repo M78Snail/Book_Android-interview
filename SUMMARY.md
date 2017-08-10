@@ -5,10 +5,88 @@
   * [Activity与Fragment的生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
   * [Acitivty的四种启动模式与特点](chapter1/12.md)
   * [Activity缓存方法](chapter1/activityhuan-cun-fang-fa.md)
-  * [Service的生命周期，两种启动方法](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
-  * 怎么保证service不被杀死
+  * [Service与Activity之间的通信问题](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
+  * [怎么保证service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
-  * Intent的使用方法，可以传递哪些数据类型
-  * ContentProvider使用方法
-* [Java](dw.md)
+  * [Intent的使用方法，可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
+  * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
+  * Thread、AsycTask、IntentService的使用场景与特点
+  * View绘制流程
+  * Android的数据存储形式
+  * Sqlite的基本操作
+  * [Android中的MVC模式](chapter1/androidzhong-de-mvc-mo-shi.md)
+  * Merge、ViewStub的作用
+  * Json有什么优劣势
+  * 动画有哪几类，各有什么特点
+  * Handler、Looper消息队列模型，各部分的作用
+  * 怎样退出终止App
+  * Asset目录与res目录的区别
+  * Android怎么加速启动Activity
+  * Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等
+  * Android中弱引用与软引用的应用场景
+  * Bitmap的四中属性，与每种属性队形的大小
+  * View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)
+  * Touch事件分发机制
+  * Android长连接，怎么处理心跳机制
+  * Zygote的启动过程
+  * Android IPC:Binder原理
+  * HTTPS连接流程
+* [JVM](dw.md)
+  * 内存模型以及分区，需要详细到每个区放什么
+  * 堆里面的分区：Eden，survival from to，老年代，各自的特点
+  * 对象创建方法，对象的内存分配，对象的访问定位
+  * GC的两种判定方法：引用计数与引用链
+  * GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方
+  * GC收集器有哪些？它们的特点是？
+  * Minor GC与Full GC分别在什么时候发生？
+  * 类加载的五个过程：加载、验证、准备、解析、初始化
+  * 双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader
+  * 分派：静态分派与动态分派
+* [操作系统](cao-zuo-xi-tong.md)
+  * 进程和线程的区别
+  * 死锁的必要条件，怎么处理死锁
+  * Window 内存管理方式：段存储，页存储，段页存储
+  * 进程的几种状态
+  * IPC 几种通信方式
+  * 什么是虚拟内存
+  * 虚拟地址、逻辑地址、线性地址、物理地址的区别
+* [数据结构](shu-ju-jie-gou.md)
+  * 链表与数组
+  * 队列和栈，出栈与入栈
+  * 链表的删除、插入、反向
+  * 字符串操作
+  * Hash表的hash函数，冲突解决方法有哪些
+  * 二叉树、B+树、AVL树、红黑树、哈夫曼树
+* [算法](suan-fa.md)
+  * [冒泡排序](suan-fa/ge-zhong-pai-xu-ff1a-mao-pao-3001-xuan-ze-3001-cha-ru-3001-xi-er-3001-gui-bing-3001-kuai-pai-3001-dui-pai-3001-tong-pai-3001-ji-shu-de-yuan-li-3001-ping-jun-shi-jian-fu-za-du-3001-zui-huai-shi-jian-fu-za-du-3001-kong-jian-fu-za-du-3001-shi-fou-wen-ding.md)
+  * 选择排序
+  * 插入排序
+  * [希尔排序](suan-fa/xi-er.md)
+  * 归并排序
+  * 快速排序
+  * 堆排序
+  * 桶排序
+  * 基数排序
+  * 二分查找，与变种二分查找
+  * 二叉树的前中后续遍历：递归与非递归写法，层序遍历算法
+  * 图的BFS与DFS算法，最小生成树prim算法与最短路径Dijkstra算法
+  * KMP算法
+  * 排列组合问题
+  * 动态规划、贪心算法、分治算法
+  * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
+* [TCP/IP 与 HTTP](tcpip-yu-http.md)
+  * OSI与TCP/IP各层的结构与功能，都有哪些协议
+  * TCP与UDP的区别
+  * TCP报文结构
+  * TCP的三次握手与四次挥手过程，各个状态名称与含义，TIMEWAIT的作用
+  * TCP拥塞控制
+  * TCP滑动窗口与回退N针协议
+  * HTTP的报文结构
+  * [HTTP的状态码含义](tcpip-yu-http/httpde-zhuang-tai-ma-han-yi.md)
+  * HTTP1.1和HTTP1.0的区别
+  * 电脑上访问一个网页，整个过程是怎么样的
+  * Ping的整个过程,ICMP报文是什么
+  * IP地址分类
+  * 路由器和交换机的区别
+  * 为什么需要3次握手与4次握手
 
