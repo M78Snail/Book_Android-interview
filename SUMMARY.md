@@ -17,9 +17,9 @@
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
   * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
   * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
-  * 动画有哪几类，各有什么特点
-  * Handler、Looper消息队列模型，各部分的作用
-  * 怎样退出终止App
+  * [动画有哪几类，各有什么特点](chapter1/dong-hua-you-na-ji-lei-ff0c-ge-you-shi-yao-te-dian.md)
+  * [Handler、Looper消息队列模型，各部分的作用](chapter1/handlerlooperxiao-xi-dui-lie-mo-xing-ff0c-ge-bu-fen-de-zuo-yong.md)
+  * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * Asset目录与res目录的区别
   * Android怎么加速启动Activity
   * Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等
