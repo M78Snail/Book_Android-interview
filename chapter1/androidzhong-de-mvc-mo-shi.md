@@ -435,5 +435,28 @@ public class Injection {
 }
 ```
 
+mock目录下的Injection
+
+```java
+public class Injection {
+
+    public static TasksRepository provideTasksRepository(@NonNull Context context) {
+        checkNotNull(context);
+        return TasksRepository.getInstance(FakeTasksRemoteDataSource.getInstance(),
+                TasksLocalDataSource.getInstance(context));
+    }
+}
+```
+
+可以看到：
+
+* prod的Injection创建TasksRepository实例时传入的是TasksRemoteDataSource实例和TasksLocalDataSource实例
+* mock的Injection创建TasksRepository实例时传入的是FakeTasksRemoteDataSource实例和TasksLocalDataSource实例，其中FakeTasksRemoteDataSource是在mock目录下创建的TasksDataSource的实现类。 
+
+通过这种方式可以实现不同版本注入不同的TasksDataSource实现类。
+
+  
+
+
 
 
