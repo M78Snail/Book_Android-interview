@@ -356,7 +356,7 @@ public class TasksRepository implements TasksDataSource {
 
 在MVP中，Presenter对象持有Model对象，如：
 
-```
+```java
 public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
         TasksDataSource.GetTaskCallback {
 
@@ -372,6 +372,27 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
         mAddTaskView = checkNotNull(addTaskView);
 
         mAddTaskView.setPresenter(this);
+    }
+}
+```
+
+Presenter在实例化是需要传入TasksDataSource对象，Presenter是在Activity中完成实例化的
+
+```
+public class AddEditTaskActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.addtask_act);
+
+        ...
+
+        // 实例化Presenter，传入TasksDataSource对象
+        new AddEditTaskPresenter(
+                taskId,
+                Injection.provideTasksRepository(getApplicationContext()),
+                addEditTaskFragment);
     }
 }
 ```
