@@ -2,13 +2,13 @@
 
 * [简介](README.md)
 * [Android](chapter1.md)
-  * [Activity与Fragment的生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
-  * [Acitivty的四种启动模式与特点](chapter1/12.md)
+  * [Activity与Fragment生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
+  * [Acitivty四种启动模式与特点](chapter1/12.md)
   * [Activity缓存方法](chapter1/activityhuan-cun-fang-fa.md)
-  * [Service与Activity之间的通信问题](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
+  * [Service与Activity通信](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [怎么保证service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
-  * [Intent的使用方法，可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
+  * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
   * [Thread、AsycTask、IntentService的使用场景与特点](chapter1/threadasyctaskintentservicede-shi-yong-chang-jing-yu-te-dian.md)
   * View绘制流程
