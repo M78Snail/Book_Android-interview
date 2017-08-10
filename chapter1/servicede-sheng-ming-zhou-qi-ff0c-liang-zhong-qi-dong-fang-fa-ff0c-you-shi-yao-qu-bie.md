@@ -2,7 +2,7 @@
 
 > 当Activity通过调用bindService\(Intent service, ServiceConnection conn,int flags\),我们可以得到一个Service的一个对象实例，然后我们就可以访问Service中的方法
 
-      **新建一个Service类**
+    **新建一个Service类**
 
 ```java
 public class MsgService extends Service {  
@@ -14,7 +14,7 @@ public class MsgService extends Service {
      * 进度条的进度值 
      */  
     private int progress = 0;  
-  
+
     /** 
      * 增加get()方法，供Activity调用 
      * @return 下载进度 
@@ -22,13 +22,13 @@ public class MsgService extends Service {
     public int getProgress() {  
         return progress;  
     }  
-  
+
     /** 
      * 模拟下载任务，每秒钟更新一次 
      */  
     public void startDownLoad(){  
         new Thread(new Runnable() {  
-              
+
             @Override  
             public void run() {  
                 while(progress < MAX_PROGRESS){  
@@ -38,13 +38,13 @@ public class MsgService extends Service {
                     } catch (InterruptedException e) {  
                         e.printStackTrace();  
                     }  
-                      
+
                 }  
             }  
         }).start();  
     }  
-  
-  
+
+
     /** 
      * 返回一个Binder对象 
      */  
@@ -52,7 +52,7 @@ public class MsgService extends Service {
     public IBinder onBind(Intent intent) {  
         return new MsgBinder();  
     }  
-      
+
     public class MsgBinder extends Binder{  
         /** 
          * 获取当前Service的实例 
@@ -74,17 +74,17 @@ bindService(intent, conn, Context.BIND_AUTO_CREATE);
 
 ```
 ServiceConnection conn = new ServiceConnection() {  
-          
+
         @Override  
         public void onServiceDisconnected(ComponentName name) {  
-              
+
         }  
-          
+
         @Override  
         public void onServiceConnected(ComponentName name, IBinder service) {  
             //返回一个MsgService对象  
             msgService = ((MsgService.MsgBinder)service).getService();  
-              
+
         }
 
 }
@@ -100,30 +100,30 @@ ServiceConnection conn = new ServiceConnection() {
     public void setOnProgressListener(OnProgressListener onProgressListener) {  
         this.onProgressListener = onProgressListener;  
     }  
-    
+
     ...activity中
    /** 
      * 模拟下载任务，每秒钟更新一次 
      */  
     public void startDownLoad(){  
         new Thread(new Runnable() {  
-              
+
             @Override  
             public void run() {  
                 while(progress < MAX_PROGRESS){  
                     progress += 5;  
-                      
+
                     //进度发生变化通知调用方  
                     if(onProgressListener != null){  
                         onProgressListener.onProgress(progress);  
                     }  
-                      
+
                     try {  
                         Thread.sleep(1000);  
                     } catch (InterruptedException e) {  
                         e.printStackTrace();  
                     }  
-                      
+
                 }  
             }  
         }).start();  
@@ -132,26 +132,26 @@ ServiceConnection conn = new ServiceConnection() {
 ServiceConnection conn = new ServiceConnection() {  
         @Override  
         public void onServiceDisconnected(ComponentName name) {  
-              
+
         }  
-          
+
         @Override  
         public void onServiceConnected(ComponentName name, IBinder service) {  
             //返回一个MsgService对象  
             msgService = ((MsgService.MsgBinder)service).getService();  
-              
+
             //注册回调接口来接收下载进度的变化  
             msgService.setOnProgressListener(new OnProgressListener() {  
-                  
+
                 @Override  
                 public void onProgress(int progress) {  
                     mProgressBar.setProgress(progress);  
-                      
+
                 }  
             });  
-              
+
         }  
-    };  
+    };
 ```
 
 * 通过broadcast\(广播\)的形式
