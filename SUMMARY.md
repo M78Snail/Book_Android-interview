@@ -24,10 +24,10 @@
   * [Android怎么加速启动Activity](chapter1/androidzen-yao-jia-su-qi-dong-activity.md)
   * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
   * [Android中弱引用与软引用的应用场景](chapter1/androidzhong-ruo-yin-yong-yu-ruan-yin-yong-de-ying-yong-chang-jing.md)
-  * Bitmap的四中属性，与每种属性队形的大小
-  * View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)
+  * [Bitmap的四中属性，与每种属性队形的大小](chapter1/bitmapde-si-zhong-shu-xing-ff0c-yu-mei-zhong-shu-xing-dui-xing-de-da-xiao.md)
+  * [View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)](chapter1/viewyu-view-group-fen-lei-ff0c-zi-ding-yi-view-guo-cheng-ff1a-onmeasure-onlayout-ondraw.md)
   * Touch事件分发机制
-  * Android长连接，怎么处理心跳机制
+  * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
   * Zygote的启动过程
   * Android IPC:Binder原理
   * HTTPS连接流程
