@@ -378,7 +378,7 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
 
 Presenter在实例化是需要传入TasksDataSource对象，Presenter是在Activity中完成实例化的
 
-```
+```java
 public class AddEditTaskActivity extends AppCompatActivity {
 
     @Override
@@ -397,5 +397,27 @@ public class AddEditTaskActivity extends AppCompatActivity {
 }
 ```
 
+可以看到TasksDataSource对象是由Injection类的provideTasksRepository方法生成
+
+  
+**2.Gradle动态配置**
+
+在main/java目中并没有Injection类，通过查看app/build.gradle文件可以知道，项目有两个生产版本：mock和prod，如下：
+
+```java
+productFlavors {
+        mock {
+            applicationIdSuffix = ".mock"
+        }
+        prod {
+
+        }
+}
+```
+
+在项目的目录结构中也有对应的src/mock和src/prod两个目录目录  
+
+
+  
 
 
