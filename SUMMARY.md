@@ -10,7 +10,7 @@
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [Intent的使用方法，可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
-  * Thread、AsycTask、IntentService的使用场景与特点
+  * [Thread、AsycTask、IntentService的使用场景与特点](chapter1/threadasyctaskintentservicede-shi-yong-chang-jing-yu-te-dian.md)
   * View绘制流程
   * Android的数据存储形式
   * Sqlite的基本操作
