@@ -1,6 +1,8 @@
 ### Activity的生命周期如下图所示： {#toc_1}
 
-![](/assets/import.png)
+| ![](/assets/import.png) |
+| :---: |
+
 
 | 方法 | 操作 |
 | :---: | :---: |
@@ -11,7 +13,10 @@
 
 ### Fragment生命周期如下图所示： {#toc_2}
 
-![](/assets/import1.1.png)
+| ![](/assets/import1.1.png) |
+| :---: |
+
+
 
 | 方法 | 操作 |
 | :---: | :---: |
