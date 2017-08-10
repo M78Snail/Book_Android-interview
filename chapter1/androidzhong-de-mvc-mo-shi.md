@@ -50,7 +50,7 @@ public interface BasePresenter {
 
 AddEditTaskContract是一个合同接口，其中包含了View和Presenter接口，便于查看和维护View和Presenter的功能。
 
-```
+```java
 public interface AddEditTaskContract {
 
     interface View extends BaseView<Presenter> {
