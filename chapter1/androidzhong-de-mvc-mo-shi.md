@@ -127,7 +127,7 @@ public class AddEditTaskActivity extends AppCompatActivity {
 
 AddEditTaskFragment实现了AddEditTaskContract接口中的View接口，其中有一个Presenter实例，在onResume方法中调用Presenter的start方法。
 
-```
+```java
 public class AddEditTaskFragment extends Fragment implements AddEditTaskContract.View {
 
     private AddEditTaskContract.Presenter mPresenter;
@@ -151,6 +151,45 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
     @Override
     public void setPresenter(@NonNull AddEditTaskContract.Presenter presenter) {
         mPresenter = checkNotNull(presenter);
+    }
+
+    ...
+}
+```
+
+**5.AddEditTaskPresenter**
+
+AddEditTaskPresenter实现了AddEditTaskContract接口中的Presenter接口，其中有一个View实例，在构造方法中调用View的setPresenter方法与View建立联系。
+
+```java
+public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
+        TasksDataSource.GetTaskCallback {
+
+    // Model实例，完成数据获取  
+    @NonNull
+    private final TasksDataSource mTasksRepository;
+
+    @NonNull
+    private final AddEditTaskContract.View mAddTaskView;
+
+    @Nullable
+    private String mTaskId;
+
+    public AddEditTaskPresenter(@Nullable String taskId, @NonNull TasksDataSource tasksRepository,
+            @NonNull AddEditTaskContract.View addTaskView) {
+        mTaskId = taskId;
+        mTasksRepository = checkNotNull(tasksRepository);
+        mAddTaskView = checkNotNull(addTaskView);
+
+        mAddTaskView.setPresenter(this);
+    }
+
+    // 重写start方法，开始获取数据
+    @Override
+    public void start() {
+        if (mTaskId != null) {
+            populateTask();
+        }
     }
 
     ...
