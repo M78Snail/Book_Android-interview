@@ -399,7 +399,6 @@ public class AddEditTaskActivity extends AppCompatActivity {
 
 可以看到TasksDataSource对象是由Injection类的provideTasksRepository方法生成
 
-  
 **2.Gradle动态配置**
 
 在main/java目中并没有Injection类，通过查看app/build.gradle文件可以知道，项目有两个生产版本：mock和prod，如下：
@@ -415,9 +414,26 @@ productFlavors {
 }
 ```
 
-在项目的目录结构中也有对应的src/mock和src/prod两个目录目录  
+在项目的目录结构中也有对应的src/mock和src/prod两个目录目录
+
+| ![](/assets/import1.14.2.png) |
+| :---: |
 
 
-  
+在mock和prod中分别有一个Injection类，这里利用了gradle中的productFlavor创建了多个版本，其中每个版本都可以在工程src目录下建立与main同级的文件夹，文件夹名字就是ProductFlavor的名字，可以在其中创建java目录并添加相应的java文件，不用的版本可以有相同名字不同实现的类，具体可查看[Android Plugin for Gradle](http://developer.android.com/intl/zh-cn/tools/building/plugin-for-gradle.html)
+
+prod目录下的Injection
+
+```java
+public class Injection {
+
+    public static TasksRepository provideTasksRepository(@NonNull Context context) {
+        checkNotNull(context);
+        return TasksRepository.getInstance(TasksRemoteDataSource.getInstance(),
+                TasksLocalDataSource.getInstance(context));
+    }
+}
+```
+
 
 
