@@ -247,5 +247,109 @@ public interface TasksDataSource {
 }
 ```
 
+**1.TasksLocalDataSource**
+
+TasksLocalDataSource是TasksDataSource的本地数据源实现类，用于从本地数据库获取数据，采用单例模式，并且有两个帮助类TasksDbHelper和TasksPersistenceContract用于从操作数据库
+
+**2.TasksRemoteDataSource**
+
+TasksRemoteDataSource是TasksDataSource的远程数据源实现类，用于从服务端获取数据（demo里只是模仿从服务端获取），采用单例模式
+
+**3.TasksRepository**
+
+Repository也是TasksDataSource的实现类，其中持有两个两个TasksDataSource对象，一般为一个TasksLocalDataSource对象和一个TasksRemoteDataSource对象，用于统一管理获取数据的方式，采用单例模式
+
+```
+public class TasksRepository implements TasksDataSource {
+
+    private static TasksRepository INSTANCE = null;
+
+    // 远程数据源对象
+    private final TasksDataSource mTasksRemoteDataSource;
+
+    // 本地数据源对象
+    private final TasksDataSource mTasksLocalDataSource;
+
+    // 存放缓存数据
+    Map<String, Task> mCachedTasks;
+
+    // 缓存数据是否可用
+    boolean mCacheIsDirty = false;
+
+    // 构造方法
+    private TasksRepository(@NonNull TasksDataSource tasksRemoteDataSource,
+                            @NonNull TasksDataSource tasksLocalDataSource) {
+        mTasksRemoteDataSource = checkNotNull(tasksRemoteDataSource);
+        mTasksLocalDataSource = checkNotNull(tasksLocalDataSource);
+    }
+
+    // 获取TasksRepository实例，采用单例模式
+    public static TasksRepository getInstance(TasksDataSource tasksRemoteDataSource,
+                                              TasksDataSource tasksLocalDataSource) {
+        if (INSTANCE == null) {
+            INSTANCE = new TasksRepository(tasksRemoteDataSource, tasksLocalDataSource);
+        }
+        return INSTANCE;
+    }
+
+    public static void destroyInstance() {
+        INSTANCE = null;
+    }
+
+    // 获取数据
+    @Override
+    public void getTasks(@NonNull final LoadTasksCallback callback) {
+        checkNotNull(callback);
+
+        // 如果缓存可用，则立即返回内存中的数据
+        if (mCachedTasks != null && !mCacheIsDirty) {
+            callback.onTasksLoaded(new ArrayList<>(mCachedTasks.values()));
+            return;
+        }
+
+        if (mCacheIsDirty) {
+            // 如果缓存数据已经不可用，则从服务端更新数据
+            getTasksFromRemoteDataSource(callback);
+        } else {
+            // 从数据库获取数据，如果没有，则从服务端获取
+            mTasksLocalDataSource.getTasks(new LoadTasksCallback() {
+                @Override
+                public void onTasksLoaded(List<Task> tasks) {
+                    refreshCache(tasks);
+                    callback.onTasksLoaded(new ArrayList<>(mCachedTasks.values()));
+                }
+
+                @Override
+                public void onDataNotAvailable() {
+                    getTasksFromRemoteDataSource(callback);
+                }
+            });
+        }
+    }
+
+    // 从服务端获取数据
+    private void getTasksFromRemoteDataSource(@NonNull final LoadTasksCallback callback) {
+        mTasksRemoteDataSource.getTasks(new LoadTasksCallback() {
+            @Override
+            public void onTasksLoaded(List<Task> tasks) {
+                refreshCache(tasks);
+                refreshLocalDataSource(tasks);
+                callback.onTasksLoaded(new ArrayList<>(mCachedTasks.values()));
+            }
+
+            @Override
+            public void onDataNotAvailable() {
+                callback.onDataNotAvailable();
+            }
+        });
+    }
+}
+
+作者：zly394
+链接：http://www.jianshu.com/p/6409ef228e8b
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
 
 
