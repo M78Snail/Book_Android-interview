@@ -20,10 +20,10 @@
   * [动画有哪几类，各有什么特点](chapter1/dong-hua-you-na-ji-lei-ff0c-ge-you-shi-yao-te-dian.md)
   * [Handler、Looper消息队列模型，各部分的作用](chapter1/handlerlooperxiao-xi-dui-lie-mo-xing-ff0c-ge-bu-fen-de-zuo-yong.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
-  * Asset目录与res目录的区别
-  * Android怎么加速启动Activity
-  * Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等
-  * Android中弱引用与软引用的应用场景
+  * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
+  * [Android怎么加速启动Activity](chapter1/androidzen-yao-jia-su-qi-dong-activity.md)
+  * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
+  * [Android中弱引用与软引用的应用场景](chapter1/androidzhong-ruo-yin-yong-yu-ruan-yin-yong-de-ying-yong-chang-jing.md)
   * Bitmap的四中属性，与每种属性队形的大小
   * View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)
   * Touch事件分发机制
