@@ -259,7 +259,7 @@ TasksRemoteDataSource是TasksDataSource的远程数据源实现类，用于从�
 
 Repository也是TasksDataSource的实现类，其中持有两个两个TasksDataSource对象，一般为一个TasksLocalDataSource对象和一个TasksRemoteDataSource对象，用于统一管理获取数据的方式，采用单例模式
 
-```
+```java
 public class TasksRepository implements TasksDataSource {
 
     private static TasksRepository INSTANCE = null;
@@ -344,11 +344,36 @@ public class TasksRepository implements TasksDataSource {
         });
     }
 }
+```
 
-作者：zly394
-链接：http://www.jianshu.com/p/6409ef228e8b
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+可以看到，在实例化TasksRepository时需要传入两个TasksDataSource对象；在获取数据时先从缓存中获取，如果缓存中没有，则从数据库获取，数据库没有，再从服务端获取，若为强制刷新，则直接从服务端获取。
+
+---
+
+### Model使用
+
+**1.TasksDataSource的实例化**
+
+在MVP中，Presenter对象持有Model对象，如：
+
+```
+public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
+        TasksDataSource.GetTaskCallback {
+
+    // TasksDataSource对象
+    @NonNull
+    private final TasksDataSource mTasksRepository;
+
+    // 实例化时传入TasksDataSource对象
+    public AddEditTaskPresenter(@Nullable String taskId, @NonNull TasksDataSource tasksRepository,
+            @NonNull AddEditTaskContract.View addTaskView) {
+        mTaskId = taskId;
+        mTasksRepository = checkNotNull(tasksRepository);
+        mAddTaskView = checkNotNull(addTaskView);
+
+        mAddTaskView.setPresenter(this);
+    }
+}
 ```
 
 
