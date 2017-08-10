@@ -17,12 +17,11 @@
 | :---: |
 
 
-
 | 方法 | 操作 |
 | :---: | :---: |
-| onAttach\(\) |  |
-| onCreateView\(\) |  |
-| onDestroyView\(\) |  |
+| onAttach\(\) | 当fragment被加入到activity调用此方法，可以获得activity |
+| onCreateView\(\) | 创建layout |
+| onDestroyView\(\) | fragment移除视图 |
 
 
 
