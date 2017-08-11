@@ -35,8 +35,8 @@
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
   * [对象创建方法，对象的内存分配，对象的访问定位](dw/dui-xiang-chuang-jian-fang-fa-ff0c-dui-xiang-de-nei-cun-fen-pei-ff0c-dui-xiang-de-fang-wen-ding-wei.md)
-  * GC的两种判定方法：引用计数与引用链
-  * GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方
+  * [GC的两种判定方法：引用计数与引用链](dw/gcde-liang-zhong-pan-ding-fang-fa-ff1a-yin-yong-ji-shu-yu-yin-yong-lian.md)
+  * [GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方](dw/gcde-san-zhong-shou-ji-fang-fa-ff1a-biao-ji-qing-chu-3001-biao-ji-zheng-li-3001-fu-zhi-suan-fa-de-yuan-li-yu-te-dian-ff0c-fen-bie-yong-zai-shi-yao-di-fang.md)
   * GC收集器有哪些？它们的特点是？
   * Minor GC与Full GC分别在什么时候发生？
   * 类加载的五个过程：加载、验证、准备、解析、初始化
