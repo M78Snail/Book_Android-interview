@@ -40,8 +40,8 @@
   * [GC收集器有哪些？它们的特点是？](dw/gcshou-ji-qi-you-na-xie-ff1f-ta-men-de-te-dian-shi-ff1f.md)
   * [Minor GC与Full GC分别在什么时候发生？](dw/minor-gcyu-full-gc-fen-bie-zai-shi-yao-shi-hou-fa-sheng-ff1f.md)
   * [类加载的五个过程：加载、验证、准备、解析、初始化](dw/lei-jia-zai-de-wu-ge-guo-cheng-ff1a-jia-zai-3001-yan-zheng-3001-zhun-bei-3001-jie-xi-3001-chu-shi-hua.md)
-  * 双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader
-  * 分派：静态分派与动态分派
+  * [双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader](dw/shuang-qin-wei-pai-mo-xing-ff1a-bootstrap-classloader-extension-classloader-applicationclassloader.md)
+  * [分派：静态分派与动态分派](dw/fen-pai-ff1a-jing-tai-fen-pai-yu-dong-tai-fen-pai.md)
 * [操作系统](cao-zuo-xi-tong.md)
   * 进程和线程的区别
   * 死锁的必要条件，怎么处理死锁
