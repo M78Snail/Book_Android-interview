@@ -18,15 +18,11 @@ Touch事件发生时Activity的 **dispatchTouchEvent\(MotionEvent ev\) **方法�
 
 > 事件响应：public boolean onTouchEvent\(MotionEvent ev\)
 
-在dispatchTouchEvent返回**super.dispatchTouchEvent\(ev\)**并且**onIntercepTouchEvent**返回 true 或返回**super.onIntercepTouchEvent**的情况下onTouchEvent会被调用。
+在dispatchTouchEvent返回**super.dispatchTouchEvent\(ev\)**并且**onIntercepTouchEvent**返回 true 或返回**super.onIntercepTouchEvent**的情况下onTouchEvent会被调用。onTouchEvent** **的事件响应逻辑如下：
 
-onTouchEvent** **的事件响应逻辑如下：
-
-* 如果 **return true **,表示会进行拦截，并交给当前View的onTouchEvent进行处理
-* 如果 **return false，**表示会进行放行，当前View上的事件会传递到子View上，再由子View的dispatchTouchEvent来开始这个事件的分发
-* 如果返回系统默认的**super.onIntercepTouchEvent\(ev\)**,表示会进行拦截，并交给当前View的onTouchEvent进行处理。
-
-
+* 如果 **return true **,表示会进行接收并处理事件
+* 如果 **return false，**表示这个事件会从当前View向上传递并且都是由上层View的onTouchEvent来接收，如果上层onTouchEvent也返回false，这个事件就会消失，并且接收不到下一次事件
+* 如果返回系统默认的**super.onTouchEvent\(ev\)**默认处理事件的逻辑和返回false时相同
 
 
 
