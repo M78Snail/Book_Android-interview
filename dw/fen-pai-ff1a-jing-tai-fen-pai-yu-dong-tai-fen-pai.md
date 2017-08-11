@@ -11,14 +11,12 @@ public class Main {
         // Car 为静态类型，Bus 为实际类型  
         Car car = new Bus();  
     }  
-}  
+}
 ```
 
 **静态分派**
 
-```
 所有依赖静态类型来定位方法执行版本的分派动作称为静态分派，其典型应用是方法重载（重载是通过参数的静态类型而不是实际类型来选择重载的版本的）。
-```
 
 举例Java代码如下：
 
@@ -34,7 +32,7 @@ public class Main {
         Car car2 = new Bus();  
         // Car 为静态类型，Jeep 为实际类型  
         Car car3 = new Jeep();  
-          
+
         showCar(car1);  
         showCar(car2);  
         showCar(car3);  
@@ -48,7 +46,7 @@ public class Main {
     private static void showCar(Jeep jeep) {  
         System.out.println("I have a Jeep !");  
     }  
-}  
+}
 ```
 
 代码输出如下：
@@ -91,12 +89,12 @@ public class Main {
         Car car2 = new Bus();  
         // Car 为静态类型，Jeep 为实际类型  
         Car car3 = new Jeep();  
-          
+
         car1.showCar();  
         car2.showCar();  
         car3.showCar();  
     }  
-}  
+}
 ```
 
 运行结果如下：
@@ -107,5 +105,5 @@ I have a Bus !
 I have a Jeep !
 ```
 
-
+可以看出来重写是一个根据实际类型决定方法版本的动态分派过程。
 
