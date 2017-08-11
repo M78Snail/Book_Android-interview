@@ -32,7 +32,7 @@
   * Android IPC:Binder原理
   * [HTTPS连接流程](chapter1/httpslian-jie-liu-cheng.md)
 * [JVM](dw.md)
-  * 内存模型以及分区，需要详细到每个区放什么
+  * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * 堆里面的分区：Eden，survival from to，老年代，各自的特点
   * 对象创建方法，对象的内存分配，对象的访问定位
   * GC的两种判定方法：引用计数与引用链
