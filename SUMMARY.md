@@ -48,10 +48,10 @@
   * [Window 内存管理方式：段存储，页存储，段页存储](cao-zuo-xi-tong/window-nei-cun-guan-li-fang-shi-ff1a-duan-cun-chu-ff0c-ye-cun-chu-ff0c-duan-ye-cun-chu.md)
   * [进程的几种状态](cao-zuo-xi-tong/jin-cheng-de-ji-zhong-zhuang-tai.md)
   * [IPC 几种通信方式](cao-zuo-xi-tong/ipc-ji-zhong-tong-xin-fang-shi.md)
-  * 什么是虚拟内存
-  * 虚拟地址、逻辑地址、线性地址、物理地址的区别
+  * [什么是虚拟内存](cao-zuo-xi-tong/shi-yao-shi-xu-ni-nei-cun.md)
+  * [虚拟地址、逻辑地址、线性地址、物理地址的区别](cao-zuo-xi-tong/xu-ni-di-zhi-3001-luo-ji-di-zhi-3001-xian-xing-di-zhi-3001-wu-li-di-zhi-de-qu-bie.md)
 * [数据结构](shu-ju-jie-gou.md)
-  * 链表与数组
+  * [链表与数组](shu-ju-jie-gou/lian-biao-yu-shu-zu.md)
   * 队列和栈，出栈与入栈
   * 链表的删除、插入、反向
   * 字符串操作
