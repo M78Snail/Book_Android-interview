@@ -45,9 +45,9 @@
 * [操作系统](cao-zuo-xi-tong.md)
   * [进程和线程的区别](cao-zuo-xi-tong/jin-cheng-he-xian-cheng-de-qu-bie.md)
   * [死锁的必要条件，怎么处理死锁](cao-zuo-xi-tong/si-suo-de-bi-yao-tiao-jian-ff0c-zen-yao-chu-li-si-suo.md)
-  * Window 内存管理方式：段存储，页存储，段页存储
-  * 进程的几种状态
-  * IPC 几种通信方式
+  * [Window 内存管理方式：段存储，页存储，段页存储](cao-zuo-xi-tong/window-nei-cun-guan-li-fang-shi-ff1a-duan-cun-chu-ff0c-ye-cun-chu-ff0c-duan-ye-cun-chu.md)
+  * [进程的几种状态](cao-zuo-xi-tong/jin-cheng-de-ji-zhong-zhuang-tai.md)
+  * [IPC 几种通信方式](cao-zuo-xi-tong/ipc-ji-zhong-tong-xin-fang-shi.md)
   * 什么是虚拟内存
   * 虚拟地址、逻辑地址、线性地址、物理地址的区别
 * [数据结构](shu-ju-jie-gou.md)
