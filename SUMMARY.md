@@ -43,8 +43,8 @@
   * [双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader](dw/shuang-qin-wei-pai-mo-xing-ff1a-bootstrap-classloader-extension-classloader-applicationclassloader.md)
   * [分派：静态分派与动态分派](dw/fen-pai-ff1a-jing-tai-fen-pai-yu-dong-tai-fen-pai.md)
 * [操作系统](cao-zuo-xi-tong.md)
-  * 进程和线程的区别
-  * 死锁的必要条件，怎么处理死锁
+  * [进程和线程的区别](cao-zuo-xi-tong/jin-cheng-he-xian-cheng-de-qu-bie.md)
+  * [死锁的必要条件，怎么处理死锁](cao-zuo-xi-tong/si-suo-de-bi-yao-tiao-jian-ff0c-zen-yao-chu-li-si-suo.md)
   * Window 内存管理方式：段存储，页存储，段页存储
   * 进程的几种状态
   * IPC 几种通信方式
