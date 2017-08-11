@@ -56,7 +56,7 @@
   * 链表的删除、插入、反向
   * [字符串操作](shu-ju-jie-gou/zi-fu-chuan-cao-zuo.md)
   * [Hash表的hash函数，冲突解决方法有哪些](shu-ju-jie-gou/hashbiao-de-hash-han-shu-ff0c-chong-tu-jie-jue-fang-fa-you-na-xie.md)
-  * 二叉树、B+树、AVL树、红黑树、哈夫曼树
+  * [二叉树、B+树、AVL树、红黑树、哈夫曼树](shu-ju-jie-gou/er-cha-shu-3001-b-shu-3001-avl-shu-3001-hong-hei-shu-3001-ha-fu-man-shu.md)
 * [算法](suan-fa.md)
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
