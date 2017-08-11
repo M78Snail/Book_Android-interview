@@ -58,6 +58,26 @@
   * [Hash表的hash函数，冲突解决方法有哪些](shu-ju-jie-gou/hashbiao-de-hash-han-shu-ff0c-chong-tu-jie-jue-fang-fa-you-na-xie.md)
   * [二叉树、B+树、AVL树、红黑树、哈夫曼树](shu-ju-jie-gou/er-cha-shu-3001-b-shu-3001-avl-shu-3001-hong-hei-shu-3001-ha-fu-man-shu.md)
 * [算法](suan-fa.md)
+  * 冒泡排序
+  * 选择排序
+  * 希尔排序
+  * 归并排序
+  * 快速排序
+  * 堆排序
+  * 桶排序
+  * 基数排序
+  * 插入排序
+  * 快排的partition函数与归并的Merge函数
+  * 对冒泡与快排的改进
+  * 二分查找，与变种二分查找
+  * 二叉树的前中后续遍历：递归与非递归写法，层序遍历算法
+  * [图的BFS与DFS算法](suan-fa/tu-de-bfsyu-dfs-suan-fa-ff0c-zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-zui-duan-lu-jing-dijkstra-suan-fa.md)
+  * 最小生成树prim算法
+  * 最短路径Dijkstra算法
+  * KMP算法
+  * 排列组合问题
+  * 动态规划、贪心算法、分治算法
+  * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
   * TCP与UDP的区别
