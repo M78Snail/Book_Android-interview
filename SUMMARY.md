@@ -52,9 +52,9 @@
   * [虚拟地址、逻辑地址、线性地址、物理地址的区别](cao-zuo-xi-tong/xu-ni-di-zhi-3001-luo-ji-di-zhi-3001-xian-xing-di-zhi-3001-wu-li-di-zhi-de-qu-bie.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表与数组](shu-ju-jie-gou/lian-biao-yu-shu-zu.md)
-  * 队列和栈，出栈与入栈
+  * [队列和栈，出栈与入栈](shu-ju-jie-gou/dui-lie-he-zhan-ff0c-chu-zhan-yu-ru-zhan.md)
   * 链表的删除、插入、反向
-  * 字符串操作
+  * [字符串操作](shu-ju-jie-gou/zi-fu-chuan-cao-zuo.md)
   * Hash表的hash函数，冲突解决方法有哪些
   * 二叉树、B+树、AVL树、红黑树、哈夫曼树
 * [算法](suan-fa.md)
