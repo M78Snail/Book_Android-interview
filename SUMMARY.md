@@ -57,6 +57,7 @@
   * 字符串操作
   * Hash表的hash函数，冲突解决方法有哪些
   * 二叉树、B+树、AVL树、红黑树、哈夫曼树
+* [算法](suan-fa.md)
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
   * TCP与UDP的区别
