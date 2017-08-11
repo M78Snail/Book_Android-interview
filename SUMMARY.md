@@ -33,8 +33,8 @@
   * [HTTPS连接流程](chapter1/httpslian-jie-liu-cheng.md)
 * [JVM](dw.md)
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
-  * 堆里面的分区：Eden，survival from to，老年代，各自的特点
-  * 对象创建方法，对象的内存分配，对象的访问定位
+  * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
+  * [对象创建方法，对象的内存分配，对象的访问定位](dw/dui-xiang-chuang-jian-fang-fa-ff0c-dui-xiang-de-nei-cun-fen-pei-ff0c-dui-xiang-de-fang-wen-ding-wei.md)
   * GC的两种判定方法：引用计数与引用链
   * GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方
   * GC收集器有哪些？它们的特点是？
