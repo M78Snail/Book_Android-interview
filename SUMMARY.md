@@ -38,8 +38,8 @@
   * [GC的两种判定方法：引用计数与引用链](dw/gcde-liang-zhong-pan-ding-fang-fa-ff1a-yin-yong-ji-shu-yu-yin-yong-lian.md)
   * [GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方](dw/gcde-san-zhong-shou-ji-fang-fa-ff1a-biao-ji-qing-chu-3001-biao-ji-zheng-li-3001-fu-zhi-suan-fa-de-yuan-li-yu-te-dian-ff0c-fen-bie-yong-zai-shi-yao-di-fang.md)
   * [GC收集器有哪些？它们的特点是？](dw/gcshou-ji-qi-you-na-xie-ff1f-ta-men-de-te-dian-shi-ff1f.md)
-  * Minor GC与Full GC分别在什么时候发生？
-  * 类加载的五个过程：加载、验证、准备、解析、初始化
+  * [Minor GC与Full GC分别在什么时候发生？](dw/minor-gcyu-full-gc-fen-bie-zai-shi-yao-shi-hou-fa-sheng-ff1f.md)
+  * [类加载的五个过程：加载、验证、准备、解析、初始化](dw/lei-jia-zai-de-wu-ge-guo-cheng-ff1a-jia-zai-3001-yan-zheng-3001-zhun-bei-3001-jie-xi-3001-chu-shi-hua.md)
   * 双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader
   * 分派：静态分派与动态分派
 * [操作系统](cao-zuo-xi-tong.md)
