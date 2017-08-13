@@ -64,7 +64,7 @@
   * [归并排序](suan-fa/gui-bing-pai-xu.md)
   * [快速排序](suan-fa/kuai-su-pai-xu.md)
   * [堆排序](suan-fa/dui-pai-xu.md)
-  * 桶排序
+  * [桶排序](suan-fa/tong-pai-xu.md)
   * 基数排序
   * 插入排序
   * 快排的partition函数与归并的Merge函数
