@@ -6,5 +6,11 @@
 
 以排序数组｛3，2，1，4，6，5｝为例
 
-![](/assets/import5.2.png)
+| ![](/assets/import5.2.png) | ![](/assets/import5.2.1.png) |
+| :---: | :---: |
+
+
+
+
+
 
