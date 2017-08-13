@@ -23,11 +23,84 @@
 
 2. 利用先进的比较排序算法对每个桶内的所有数据进行排序，其时间复杂度为 ∑ O\(Ni\*logNi\) 。其中Ni 为第i个桶的数据量。
 
-很显然，第②部分是桶排序性能好坏的决定因素。尽量减少桶内数据的数量是提高效率的唯一办法\(因为基于比较排序的最好平均时间复杂度只能达到O\(N\*logN\)了\)。因此，我们需要尽量做到下面两点：　
+很显然，第②部分是桶排序性能好坏的决定因素。尽量减少桶内数据的数量是提高效率的唯一办法\(因为基于比较排序的最好平均时间复杂度只能达到O\(N\*logN\)了\)。因此，我们需要尽量做到下面两点：
 
 > 1. 映射函数f\(k\)能够将N个数据平均的分配到M个桶中，这样每个桶就有\[N/M\]个数据量。
 >
 > 2. 尽量的增大桶的数量。极限情况下每个桶只能得到一个数据，这样就完全避开了桶内数据的“比较”排序操作。 当然，做到这一点很不容易，数据量巨大的情况下，f\(k\)函数会使得桶集合的数量巨大，空间浪费严重。这就是一个时间代价和空间代价的权衡问题了。
+
+**Java实现**
+
+```java
+public class BucketSort  {
+    /** 
+     * 对arr进行桶排序，排序结果仍放在arr中 
+     */  
+    public static void bucketSort(double arr[]){  
+  //-------------------------------------------------分桶-----------------------------------------------      
+        int n = arr.length;  
+        //存放桶的链表
+        ArrayList bucketList[] = new ArrayList [n];  
+        //每个桶是一个list，存放此桶的元素   
+        for(int i =0;i<n;i++){  
+            //下取等
+            int temp = (int) Math.floor(n*arr[i]);  
+            //若不存在该桶，就新建一个桶并加入到桶链表中
+            if(null==bucketList[temp])  
+                bucketList[temp] = new ArrayList();  
+            //把当前元素加入到对应桶中
+            bucketList[temp].add(arr[i]);            
+        }  
+//-------------------------------------------------桶内排序-----------------------------------------------    
+        //对每个桶中的数进行插入排序   
+        for(int i = 0;i<n;i++){  
+            if(null!=bucketList[i])  
+                insert(bucketList[i]);  
+        }  
+//-------------------------------------------------合并桶内数据-----------------------------------------------    
+        //把各个桶的排序结果合并   
+        int count = 0; 
+        for(int i = 0;i<n;i++){  
+            if(null!=bucketList[i]){  
+                Iterator iter = bucketList[i].iterator();  
+                while(iter.hasNext()){  
+                    Double d = (Double)iter.next();  
+                    arr[count] = d;  
+                    count++;  
+                }  
+            }  
+        }  
+    }  
+    
+    /** 
+     * 用插入排序对每个桶进行排序 
+     * 从小到大排序
+     */  
+    public static void insert(ArrayList list){  
+        
+        if(list.size()>1){  
+            for(int i =1;i<list.size();i++){  
+                if((Double)list.get(i)<(Double)list.get(i-1)){  
+                    double temp = (Double) list.get(i);  
+                    int j = i-1;  
+                    for(;j>=0&&((Double)list.get(j)>(Double)list.get(j+1));j--)  
+                        list.set(j+1, list.get(j));  //后移
+                    list.set(j+1, temp);  
+                }  
+            }  
+        } 
+    }
+}
+测试代码：
+
+public static void main(String[] args) {
+        double arr [] ={0.21,0.23,0.76,0.12,0.89};
+        BucketSort.bucketSort(arr);
+        for(double a:arr){
+            System.out.println(a);
+        }
+}
+```
 
 
 

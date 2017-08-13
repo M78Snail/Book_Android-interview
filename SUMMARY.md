@@ -65,8 +65,8 @@
   * [快速排序](suan-fa/kuai-su-pai-xu.md)
   * [堆排序](suan-fa/dui-pai-xu.md)
   * [桶排序](suan-fa/tong-pai-xu.md)
-  * 基数排序
-  * 插入排序
+  * [基数排序](suan-fa/ji-shu-pai-xu.md)
+  * [插入排序](suan-fa/cha-ru-pai-xu.md)
   * 快排的partition函数与归并的Merge函数
   * 对冒泡与快排的改进
   * 二分查找，与变种二分查找
