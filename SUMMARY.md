@@ -74,7 +74,7 @@
   * [图的BFS与DFS算法](suan-fa/tu-de-bfsyu-dfs-suan-fa-ff0c-zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-zui-duan-lu-jing-dijkstra-suan-fa.md)
   * [最小生成树prim算法](suan-fa/zui-xiao-sheng-cheng-shu-prim-suan-fa.md)
   * [最短路径Dijkstra算法](suan-fa/zui-duan-lu-jing-dijkstra-suan-fa.md)
-  * KMP算法
+  * [KMP算法](suan-fa/kmpsuan-fa.md)
   * 排列组合问题
   * 动态规划、贪心算法、分治算法
   * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
