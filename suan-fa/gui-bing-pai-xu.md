@@ -41,7 +41,7 @@ public static void merge_sort(int[] arr) {
       //用于合并的临时数组
         int[] result = new int[len];
         int block, start;
-        
+
       //两两合并后块大小变大两倍 (注意最后一次block等于len)
         for(block = 1; block <=len ; block *= 2) {
             //把整个数组分成很多个块，每次合并处理两个块
@@ -81,7 +81,7 @@ public static void merge_sort(int[] arr) {
 
 2. 将上述序列再次归并，形成floor\(n/4\)个序列，每个序列包含四个元素
 
-3. 重复步骤②，直到所有元素排序完毕
+3. 重复步骤2，直到所有元素排序完毕
 
 **Java代码**
 
@@ -112,6 +112,7 @@ reg[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
             reg[k++] = arr[start1++];
         while (start2 <= end2)
             reg[k++] = arr[start2++];
+            
         //借用reg数组做合并，然后把数据存回arr中
         for (k = start; k <= end; k++)
             arr[k] = reg[k];

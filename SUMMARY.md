@@ -62,8 +62,8 @@
   * [选择排序](suan-fa/xuan-ze-pai-xu.md)
   * [希尔排序](suan-fa/xi-er-pai-xu.md)
   * [归并排序](suan-fa/gui-bing-pai-xu.md)
-  * 快速排序
-  * 堆排序
+  * [快速排序](suan-fa/kuai-su-pai-xu.md)
+  * [堆排序](suan-fa/dui-pai-xu.md)
   * 桶排序
   * 基数排序
   * 插入排序
