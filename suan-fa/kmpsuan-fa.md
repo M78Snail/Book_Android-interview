@@ -120,7 +120,7 @@ private static int[] getNextArray(String s){
 
 因此整个KMP算法的代码过程如下：
 
-```
+```java
 /**
   * @param str1 被匹配的字符串
   * @param str2  子串
@@ -166,6 +166,12 @@ public static void main(String[] args) {
         String W = "ＡＢＣＤＡＢＤ";
         System.out.println(kmp(T,W));
 }
+```
+
+运行结果：
+
+```
+true
 ```
 
 
