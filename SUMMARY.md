@@ -75,8 +75,8 @@
   * [最小生成树prim算法](suan-fa/zui-xiao-sheng-cheng-shu-prim-suan-fa.md)
   * [最短路径Dijkstra算法](suan-fa/zui-duan-lu-jing-dijkstra-suan-fa.md)
   * [KMP算法](suan-fa/kmpsuan-fa.md)
-  * 排列组合问题
-  * 动态规划、贪心算法、分治算法
+  * [排列组合问题](suan-fa/pai-lie-zu-he-wen-ti.md)
+  * [动态规划、贪心算法、分治算法](suan-fa/dong-tai-gui-hua-3001-tan-xin-suan-fa-3001-fen-zhi-suan-fa.md)
   * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
