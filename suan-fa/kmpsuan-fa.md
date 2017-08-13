@@ -71,7 +71,7 @@ next数组是只与子串有关与主串无关的，它记录的是子串到每�
 这是后就要分为两种情况了：
 
 1. **如果Ｗ\[i\]==W\[j\]**  
-   显然前缀往后再加上一个字符之后依然会和后缀往后加上一个字符相等，此时` next[i] = next[i-1] + 1，即next[i] = ｊ+1`
+   显然前缀往后再加上一个字符之后依然会和后缀往后加上一个字符相等，此时`next[i] = next[i-1] + 1，即next[i] = ｊ+1`
 
 2. **如果Ｗ\[i\]！=W\[j\]**
 
@@ -81,7 +81,7 @@ next数组是只与子串有关与主串无关的，它记录的是子串到每�
 
    既然长的匹配值不行了，我们只能回溯到短的匹配。把ｊ下标循环向前（下标０方向）移动，直到W\[j\]W\[i\]或者j0为止（回到第一种情况）。
 
-   那么ｊ怎么移动呢？当前Ｗ\[i\]！=W\[j\]，那么就求0到j-1的最长匹配值（next\[j - 1\]），再比较这个最长匹配串的末尾字符的下一位是否等于w\[i\]，不相等再循环。 
+   那么ｊ怎么移动呢？当前Ｗ\[i\]！=W\[j\]，那么就求0到j-1的最长匹配值（next\[j - 1\]），再比较这个最长匹配串的末尾字符的下一位是否等于w\[i\]，不相等再循环。
 
 **Java代码**
 
@@ -100,7 +100,7 @@ private static int[] getNextArray(String s){
                next[i] = j;  
            }  
            return next;  
-} 
+}
 ```
 
 Ｗ字符串"ABCDABD"为例，运行结果如下：
@@ -116,7 +116,7 @@ private static int[] getNextArray(String s){
 ```
 
 **KMP**  
-其实进行next数组求解的过程，类似于主串和子串进行匹配的过程，只不过是在next数组求解过程中，是子串和子串自己进行比较而已。　
+其实进行next数组求解的过程，类似于主串和子串进行匹配的过程，只不过是在next数组求解过程中，是子串和子串自己进行比较而已。
 
 因此整个KMP算法的代码过程如下：
 
@@ -126,7 +126,6 @@ private static int[] getNextArray(String s){
   * @param str2  子串
   * @return 布尔值
   */
-   
 public static boolean kmp(String str1,String str2){
         char[] strA = str1.toCharArray();
         char[] strB = str2.toCharArray();
