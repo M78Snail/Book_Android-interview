@@ -67,8 +67,8 @@
   * [桶排序](suan-fa/tong-pai-xu.md)
   * [基数排序](suan-fa/ji-shu-pai-xu.md)
   * [插入排序](suan-fa/cha-ru-pai-xu.md)
-  * 快排的partition函数与归并的Merge函数
-  * 对冒泡与快排的改进
+  * [快排的partition函数与归并的Merge函数](suan-fa/kuai-paide-partition-han-shu-yu-gui-bing-de-merge-han-shu.md)
+  * [对冒泡与快排的改进](suan-fa/dui-mao-pao-yu-kuai-pai-de-gai-jin.md)
   * 二分查找，与变种二分查找
   * 二叉树的前中后续遍历：递归与非递归写法，层序遍历算法
   * [图的BFS与DFS算法](suan-fa/tu-de-bfsyu-dfs-suan-fa-ff0c-zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-zui-duan-lu-jing-dijkstra-suan-fa.md)
