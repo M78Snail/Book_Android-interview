@@ -90,6 +90,6 @@
   * [电脑上访问一个网页，整个过程是怎么样的](tcpip-yu-http/dian-nao-shang-fang-wen-yi-ge-wang-ye-ff0c-zheng-ge-guo-cheng-shi-zen-yao-yang-de.md)
   * [Ping的整个过程,ICMP报文是什么](tcpip-yu-http/pingde-zheng-ge-guo-7a0b2c-icmp-bao-wen-shi-shi-yao.md)
   * [IP地址分类](tcpip-yu-http/ipdi-zhi-fen-lei.md)
-  * 路由器和交换机的区别
+  * [路由器和交换机的区别](tcpip-yu-http/lu-you-qi-he-jiao-huan-ji-de-qu-bie.md)
   * 为什么需要3次握手与4次握手
 
