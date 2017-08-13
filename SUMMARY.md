@@ -86,7 +86,7 @@
   * [TCP滑动窗口与回退N针协议](tcpip-yu-http/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
   * [HTTP的报文结构](tcpip-yu-http/httpde-bao-wen-jie-gou.md)
   * [HTTP的状态码含义](tcpip-yu-http/httpde-zhuang-tai-ma-han-yi.md)
-  * HTTP1.1和HTTP1.0的区别
+  * [HTTP1.1和HTTP1.0的区别](tcpip-yu-http/http11he-http1-0-de-qu-bie.md)
   * 电脑上访问一个网页，整个过程是怎么样的
   * Ping的整个过程,ICMP报文是什么
   * IP地址分类
