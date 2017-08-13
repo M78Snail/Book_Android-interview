@@ -83,8 +83,8 @@
   * [TCP报文结构](tcpip-yu-http/tcpbao-wen-jie-gou.md)
   * [TCP的三次握手与四次挥手过程，各个状态名称与含义，TIMEWAIT的作用](tcpip-yu-http/tcpde-san-ci-wo-shou-yu-si-ci-huishou-guo-cheng-ff0c-ge-ge-zhuang-tai-ming-cheng-yu-han-yi-ff0c-timewait-de-zuo-yong.md)
   * [TCP拥塞控制](tcpip-yu-http/tcpyong-sai-kong-zhi.md)
-  * TCP滑动窗口与回退N针协议
-  * HTTP的报文结构
+  * [TCP滑动窗口与回退N针协议](tcpip-yu-http/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
+  * [HTTP的报文结构](tcpip-yu-http/httpde-bao-wen-jie-gou.md)
   * [HTTP的状态码含义](tcpip-yu-http/httpde-zhuang-tai-ma-han-yi.md)
   * HTTP1.1和HTTP1.0的区别
   * 电脑上访问一个网页，整个过程是怎么样的
