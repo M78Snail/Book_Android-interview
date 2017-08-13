@@ -73,7 +73,7 @@
   * [二叉树的前中后续遍历：递归与非递归写法，层序遍历算法](suan-fa/er-cha-shu-de-qian-zhong-hou-xu-bian-li-ff1a-di-gui-yu-fei-di-gui-xie-fa-ff0c-ceng-xu-bian-li-suan-fa.md)
   * [图的BFS与DFS算法](suan-fa/tu-de-bfsyu-dfs-suan-fa-ff0c-zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-zui-duan-lu-jing-dijkstra-suan-fa.md)
   * [最小生成树prim算法](suan-fa/zui-xiao-sheng-cheng-shu-prim-suan-fa.md)
-  * 最短路径Dijkstra算法
+  * [最短路径Dijkstra算法](suan-fa/zui-duan-lu-jing-dijkstra-suan-fa.md)
   * KMP算法
   * 排列组合问题
   * 动态规划、贪心算法、分治算法
