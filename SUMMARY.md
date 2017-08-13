@@ -58,8 +58,8 @@
   * [Hash表的hash函数，冲突解决方法有哪些](shu-ju-jie-gou/hashbiao-de-hash-han-shu-ff0c-chong-tu-jie-jue-fang-fa-you-na-xie.md)
   * [二叉树、B+树、AVL树、红黑树、哈夫曼树](shu-ju-jie-gou/er-cha-shu-3001-b-shu-3001-avl-shu-3001-hong-hei-shu-3001-ha-fu-man-shu.md)
 * [算法](suan-fa.md)
-  * 冒泡排序
-  * 选择排序
+  * [冒泡排序](suan-fa/mao-pao-pai-xu.md)
+  * [选择排序](suan-fa/xuan-ze-pai-xu.md)
   * 希尔排序
   * 归并排序
   * 快速排序
