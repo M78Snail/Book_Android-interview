@@ -91,5 +91,5 @@
   * [Ping的整个过程,ICMP报文是什么](tcpip-yu-http/pingde-zheng-ge-guo-7a0b2c-icmp-bao-wen-shi-shi-yao.md)
   * [IP地址分类](tcpip-yu-http/ipdi-zhi-fen-lei.md)
   * [路由器和交换机的区别](tcpip-yu-http/lu-you-qi-he-jiao-huan-ji-de-qu-bie.md)
-  * 为什么需要3次握手与4次握手
+  * [为什么需要3次握手与4次握手](tcpip-yu-http/wei-shi-yao-xu-yao-3-ci-wo-shou-yu-4-ci-wo-shou.md)
 
