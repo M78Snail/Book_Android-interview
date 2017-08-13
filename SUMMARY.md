@@ -87,9 +87,9 @@
   * [HTTP的报文结构](tcpip-yu-http/httpde-bao-wen-jie-gou.md)
   * [HTTP的状态码含义](tcpip-yu-http/httpde-zhuang-tai-ma-han-yi.md)
   * [HTTP1.1和HTTP1.0的区别](tcpip-yu-http/http11he-http1-0-de-qu-bie.md)
-  * 电脑上访问一个网页，整个过程是怎么样的
-  * Ping的整个过程,ICMP报文是什么
-  * IP地址分类
+  * [电脑上访问一个网页，整个过程是怎么样的](tcpip-yu-http/dian-nao-shang-fang-wen-yi-ge-wang-ye-ff0c-zheng-ge-guo-cheng-shi-zen-yao-yang-de.md)
+  * [Ping的整个过程,ICMP报文是什么](tcpip-yu-http/pingde-zheng-ge-guo-7a0b2c-icmp-bao-wen-shi-shi-yao.md)
+  * [IP地址分类](tcpip-yu-http/ipdi-zhi-fen-lei.md)
   * 路由器和交换机的区别
   * 为什么需要3次握手与4次握手
 
