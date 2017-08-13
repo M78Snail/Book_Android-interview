@@ -77,7 +77,7 @@
   * [KMP算法](suan-fa/kmpsuan-fa.md)
   * [排列组合问题](suan-fa/pai-lie-zu-he-wen-ti.md)
   * [动态规划、贪心算法、分治算法](suan-fa/dong-tai-gui-hua-3001-tan-xin-suan-fa-3001-fen-zhi-suan-fa.md)
-  * 大数据处理：类似10亿条数据找出最大的1000个数.........等等
+  * [大数据处理：类似10亿条数据找出最大的1000个数.........等等](suan-fa/da-shu-ju-chu-li-ff1a-lei-si-10-yi-tiao-shu-ju-zhao-chu-zui-da-de-1000-ge-6570-deng-deng.md)
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
   * OSI与TCP/IP各层的结构与功能，都有哪些协议
   * TCP与UDP的区别
