@@ -60,8 +60,8 @@
 * [算法](suan-fa.md)
   * [冒泡排序](suan-fa/mao-pao-pai-xu.md)
   * [选择排序](suan-fa/xuan-ze-pai-xu.md)
-  * 希尔排序
-  * 归并排序
+  * [希尔排序](suan-fa/xi-er-pai-xu.md)
+  * [归并排序](suan-fa/gui-bing-pai-xu.md)
   * 快速排序
   * 堆排序
   * 桶排序
