@@ -75,13 +75,12 @@
   * [最小生成树prim算法](suan-fa/zui-xiao-sheng-cheng-shu-prim-suan-fa.md)
   * [最短路径Dijkstra算法](suan-fa/zui-duan-lu-jing-dijkstra-suan-fa.md)
   * [KMP算法](suan-fa/kmpsuan-fa.md)
-  * [排列组合问题](suan-fa/pai-lie-zu-he-wen-ti.md)
   * [动态规划、贪心算法、分治算法](suan-fa/dong-tai-gui-hua-3001-tan-xin-suan-fa-3001-fen-zhi-suan-fa.md)
   * [大数据处理：类似10亿条数据找出最大的1000个数.........等等](suan-fa/da-shu-ju-chu-li-ff1a-lei-si-10-yi-tiao-shu-ju-zhao-chu-zui-da-de-1000-ge-6570-deng-deng.md)
 * [TCP/IP 与 HTTP](tcpip-yu-http.md)
-  * OSI与TCP/IP各层的结构与功能，都有哪些协议
-  * TCP与UDP的区别
-  * TCP报文结构
+  * [OSI与TCP/IP各层的结构与功能，都有哪些协议](tcpip-yu-http/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
+  * [TCP与UDP的区别](tcpip-yu-http/tcpyuudp-de-qu-bie.md)
+  * [TCP报文结构](tcpip-yu-http/tcpbao-wen-jie-gou.md)
   * TCP的三次握手与四次挥手过程，各个状态名称与含义，TIMEWAIT的作用
   * TCP拥塞控制
   * TCP滑动窗口与回退N针协议
