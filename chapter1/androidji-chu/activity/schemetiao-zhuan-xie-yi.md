@@ -60,5 +60,13 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 </activity>
 ```
 
-2.
+2.调用方式
+
+> 网页上：
+
+```
+<a href="xl://goods:8888/goodsDetail?goodsId=10011002">打开商品详情</a>
+```
+
+
 
