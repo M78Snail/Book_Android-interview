@@ -28,13 +28,13 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 ```
 <activity
             android:name=".GoodsDetailActivity"
-            
+
             android:theme="@style/AppTheme">
-            
+
             <!--要想在别的App上能成功调起App，必须添加intent过滤器-->
-            
+
             <intent-filter>
-                
+
                 <!--协议部分，随便设置-->
 
                 <data
@@ -42,9 +42,9 @@ xl://goods:8888/goodsDetail?goodsId=10011002
                     android:path="/goodsDetail"
                     android:port="8888"
                     android:scheme="xl" />
-                
+
                 <!--下面这几行也必须得设置-->
-                
+
                 <category android:name="android.intent.category.DEFAULT" />
 
 
@@ -57,7 +57,7 @@ xl://goods:8888/goodsDetail?goodsId=10011002
             </intent-filter>
 
 
-        </activity>
+</activity>
 ```
 
 
