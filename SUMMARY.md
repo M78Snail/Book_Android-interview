@@ -3,10 +3,16 @@
 * [简介](README.md)
 * [Android](chapter1.md)
   * [Android基础](chapter1/androidji-chu.md)
-    * [Android生命周期](chapter1/androidji-chu/androidsheng-ming-zhou-qi.md)
+    * [Activity](chapter1/androidji-chu/activity.md)
+      * [Android生命周期](chapter1/androidji-chu/activity/androidsheng-ming-zhou-qi.md)
+      * [Android启动模式](chapter1/androidji-chu/activity/androidqi-dong-mo-shi.md)
+      * [Scheme跳转协议](chapter1/androidji-chu/activity/schemetiao-zhuan-xie-yi.md)
+    * Fragment
+    * Service
+    * Binder
+    * WebView
+    * BroadCast
   * [Activity与Fragment生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
-  * [Acitivty四种启动模式与特点](chapter1/12.md)
-  * [Activity缓存方法](chapter1/activityhuan-cun-fang-fa.md)
   * [Service与Activity通信](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [怎么保证Service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
