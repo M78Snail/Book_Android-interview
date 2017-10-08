@@ -72,7 +72,29 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 
 ```
 Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("xl://goods:8888/goodsDetail?goodsId=10011002")); 
-startActivity(intent); 
+startActivity(intent);
+```
+
+3.如何判断一个Schema是否有效 
+
+```
+PackageManager packageManager = getPackageManager();
+
+
+Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("xl://goods:8888/goodsDetail?goodsId=10011002"));
+
+
+List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
+
+
+boolean isValid = !activities.isEmpty();
+
+
+if (isValid) {
+
+  startActivity(intent);
+
+}
 ```
 
 
