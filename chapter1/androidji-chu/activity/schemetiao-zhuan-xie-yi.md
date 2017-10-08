@@ -23,7 +23,7 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 
 > 如何使用
 
-1. 在AndroidManifest.xml中对&lt;activity /&gt;标签增加&lt;intent-filter /&gt;设置Schema
+1.在AndroidManifest.xml中对&lt;activity /&gt;标签增加&lt;intent-filter /&gt;设置Schema
 
 ```
 <activity
@@ -60,5 +60,5 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 </activity>
 ```
 
-
+2.
 
