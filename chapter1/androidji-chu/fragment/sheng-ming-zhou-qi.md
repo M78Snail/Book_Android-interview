@@ -44,5 +44,5 @@ public static class FragmentA extends ListFragment {
 }
 ```
 
-
+如果activity没有实现这个接口，fragment将会抛出[**ClassCastException**](http://developer.android.com/reference/java/lang/ClassCastException.html) 异常，如果成功了，mListener将会是activity实现OnArticleSelectedListener接口的一个引用，所以通过调用OnArticleSelectedListener接口的方法，fragment A可以和activity共享事件。
 
