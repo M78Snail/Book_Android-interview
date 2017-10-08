@@ -7,7 +7,8 @@
       * [Android生命周期](chapter1/androidji-chu/activity/androidsheng-ming-zhou-qi.md)
       * [Android启动模式](chapter1/androidji-chu/activity/androidqi-dong-mo-shi.md)
       * [Scheme跳转协议](chapter1/androidji-chu/activity/schemetiao-zhuan-xie-yi.md)
-    * Fragment
+    * [Fragment](chapter1/androidji-chu/fragment.md)
+      * [第五大组件](chapter1/androidji-chu/fragment/fragmentwei-shi-yao-bei-cheng-wei-di-wu-da-zu-jian.md)
     * Service
     * Binder
     * WebView
