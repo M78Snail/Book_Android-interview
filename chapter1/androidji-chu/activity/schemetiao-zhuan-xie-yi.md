@@ -25,49 +25,40 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 
 1. 在AndroidManifest.xml中对&lt;activity /&gt;标签增加&lt;intent-filter /&gt;设置Schema
 
-   ```java
-   <activity
-               android:name=".GoodsDetailActivity"
+```
+<activity
+            android:name=".GoodsDetailActivity"
             
-               android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme">
             
-               <!--要想在别的App上能成功调起App，必须添加intent过滤器-->
+            <!--要想在别的App上能成功调起App，必须添加intent过滤器-->
             
-               <intent-filter>
+            <intent-filter>
                 
-                   <!--协议部分，随便设置-->
+                <!--协议部分，随便设置-->
 
-                   <data
-                       android:host="goods"
-                       android:path="/goodsDetail"
-                       android:port="8888"
-                       android:scheme="xl" />
+                <data
+                    android:host="goods"
+                    android:path="/goodsDetail"
+                    android:port="8888"
+                    android:scheme="xl" />
                 
-                   <!--下面这几行也必须得设置-->
+                <!--下面这几行也必须得设置-->
                 
-                   <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
 
 
-                   <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW" />
 
 
-                   <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
 
-               </intent-filter>
+            </intent-filter>
 
 
-   </activity>
-   ```
+        </activity>
+```
 
-   的
-
-2. 
-2.调用方式
-
-1. 判断一个Schema是否有效
-
-2. e1e1
-3. 
 
 
