@@ -18,8 +18,6 @@
     * Binder
     * WebView
     * BroadCast
-  * [Service与Activity通信](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
-  * [怎么保证Service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
