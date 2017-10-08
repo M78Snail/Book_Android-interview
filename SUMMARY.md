@@ -9,8 +9,8 @@
       * [Scheme跳转协议](chapter1/androidji-chu/activity/schemetiao-zhuan-xie-yi.md)
     * [Fragment](chapter1/androidji-chu/fragment.md)
       * [第五大组件](chapter1/androidji-chu/fragment/fragmentwei-shi-yao-bei-cheng-wei-di-wu-da-zu-jian.md)
-      * [生命周期](chapter1/androidji-chu/fragment/sheng-ming-zhou-qi.md)
-      * [Fragment之间的通信](chapter1/androidji-chu/fragment/fragmentzhi-jian-de-tong-xin.md)
+      * [Fragemnt之间的通信](chapter1/androidji-chu/fragment/sheng-ming-zhou-qi.md)
+      * [生命周期](chapter1/androidji-chu/fragment/fragmentzhi-jian-de-tong-xin.md)
     * Service
     * Binder
     * WebView
