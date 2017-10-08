@@ -11,11 +11,13 @@
       * [第五大组件](chapter1/androidji-chu/fragment/fragmentwei-shi-yao-bei-cheng-wei-di-wu-da-zu-jian.md)
       * [Fragemnt之间的通信](chapter1/androidji-chu/fragment/sheng-ming-zhou-qi.md)
       * [生命周期](chapter1/androidji-chu/fragment/fragmentzhi-jian-de-tong-xin.md)
-    * Service
+    * [Service](chapter1/androidji-chu/service.md)
+      * [Service与Activity通信](chapter1/androidji-chu/service/serviceyu-activity-tong-xin.md)
+      * [怎么保证Service不被杀死](chapter1/androidji-chu/service/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
+      * [什么是IntentService？有何优点？](chapter1/androidji-chu/service/shi-yao-shi-intentservice-ff1f-you-he-you-dian-ff1f.md)
     * Binder
     * WebView
     * BroadCast
-  * [Activity与Fragment生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
   * [Service与Activity通信](chapter1/servicede-sheng-ming-zhou-qi-ff0c-liang-zhong-qi-dong-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [怎么保证Service不被杀死](chapter1/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
