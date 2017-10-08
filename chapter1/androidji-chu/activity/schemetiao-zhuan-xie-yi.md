@@ -68,5 +68,12 @@ xl://goods:8888/goodsDetail?goodsId=10011002
 <a href="xl://goods:8888/goodsDetail?goodsId=10011002">打开商品详情</a>
 ```
 
+> 原生调用：
+
+```
+Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("xl://goods:8888/goodsDetail?goodsId=10011002")); 
+startActivity(intent); 
+```
+
 
 
