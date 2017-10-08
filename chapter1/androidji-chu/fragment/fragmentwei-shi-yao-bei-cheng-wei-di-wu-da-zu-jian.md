@@ -60,8 +60,12 @@ public class MainActivity extends AppCompatActivity {
      fragmentTransaction.commit();
    }
  }
-
 ```
+
+> FragmentPageAdapter和FragmentPageStateAdapter的区别
+
+* FragmentPageAdapter在每次切换页面的时候，是将Frament进行分离，适合页面少的Fragment，对内存不会有太大的影响
+* FragmentPageStateAdapter在每次切换页面的时候，是将Frament进行回收，适合页面多的Fragment，这样就不会有消耗太多内存
 
 
 
