@@ -2,6 +2,8 @@
 
 * [简介](README.md)
 * [Android](chapter1.md)
+  * [Android基础](chapter1/androidji-chu.md)
+    * [Android生命周期](chapter1/androidji-chu/androidsheng-ming-zhou-qi.md)
   * [Activity与Fragment生命周期](chapter1/activityyu-fragment-de-sheng-ming-zhou-qi.md)
   * [Acitivty四种启动模式与特点](chapter1/12.md)
   * [Activity缓存方法](chapter1/activityhuan-cun-fang-fa.md)
@@ -17,7 +19,7 @@
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
   * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
   * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
-  * [动画有哪几类，各有什么特点](chapter1/dong-hua-you-na-ji-lei-ff0c-ge-you-shi-yao-te-dian.md)
+  * Android基础
   * [Handler、Looper消息队列模型，各部分的作用](chapter1/handlerlooperxiao-xi-dui-lie-mo-xing-ff0c-ge-bu-fen-de-zuo-yong.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
