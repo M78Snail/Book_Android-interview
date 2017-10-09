@@ -21,5 +21,7 @@ MeasureSpec在很大程度上决定一个View的大小，在测量过程中，�
 
 ![](/assets/import_specmode.png)
 
+> 4.onMeasure\(\)方法
 
+直接继承View的控件需要重写onMeasure方法并设置wrap\__content时的自身大小，否则wrap\__content
 
