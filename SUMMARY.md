@@ -21,23 +21,21 @@
   * [异步消息处理机制](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi.md)
     * [Handler](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/handler.md)
     * [Asynctask](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/asynctask.md)
-    * HandlerThread
-    * IntentService
-  * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
+    * [HandlerThread](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/handlerthread.md)
+    * [IntentService](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/intentservice.md)
+  * [视图工作机制](chapter1/shi-tu-gong-zuo-ji-zhi.md)
+  * [事件分发机制](chapter1/shi-jian-fen-fa-ji-zhi.md)
+  * [ListView](chapter1/listview.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
-  * [Thread、AsycTask、IntentService的使用场景与特点](chapter1/threadasyctaskintentservicede-shi-yong-chang-jing-yu-te-dian.md)
   * [View绘制流程](chapter1/viewhui-zhi-liu-cheng.md)
   * [Android的数据存储形式](chapter1/androidde-shu-ju-cun-chu-xing-shi.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
-  * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
+  * ListView
   * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
-  * 异步消息处理机制
-  * [Handler、Looper消息队列模型，各部分的作用](chapter1/handlerlooperxiao-xi-dui-lie-mo-xing-ff0c-ge-bu-fen-de-zuo-yong.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
-  * [Android怎么加速启动Activity](chapter1/androidzen-yao-jia-su-qi-dong-activity.md)
   * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
   * [Android中弱引用与软引用的应用场景](chapter1/androidzhong-ruo-yin-yong-yu-ruan-yin-yong-de-ying-yong-chang-jing.md)
   * [Bitmap的四中属性，与每种属性队形的大小](chapter1/bitmapde-si-zhong-shu-xing-ff0c-yu-mei-zhong-shu-xing-dui-xing-de-da-xiao.md)
@@ -45,8 +43,6 @@
   * [Touch事件分发机制](chapter1/touchshi-jian-fen-fa-ji-zhi.md)
   * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
   * [Zygote的启动过程](chapter1/zygotede-qi-dong-guo-cheng.md)
-  * Android IPC:Binder原理
-  * [HTTPS连接流程](chapter1/httpslian-jie-liu-cheng.md)
 * [JVM](dw.md)
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
