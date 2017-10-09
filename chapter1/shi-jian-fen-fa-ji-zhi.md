@@ -26,3 +26,21 @@ Touch事件发生时Activity的 **dispatchTouchEvent\(MotionEvent ev\) **方法�
 
 ---
 
+一**、简要的谈谈Android的事件分发机制？**
+
+当点击事件发生时，首先Activity会将点击事件传递给Window，再从Window传递给顶层View。TouchEvent会首先传递给最顶层View的**dispatchTouchEvent事件分发**，如果**dispatchTouchEvent返回true**，则会由当前view的**onTouchEvent来消费事件；如果返回false，**则会传递给上层父view的**onTouchEvent **进行消费，如果返回默认的**super.dispatchTouchEvent\(ev\)**,事件会自动的分发给当前View的**onIntercepTouchEvent**方法。如果 interceptTouchEvent 返回 true ，也就是拦截掉了，则交给它的 onTouchEvent 来处理，如果 interceptTouchEvent 返回 false ，那么就传递给子 view ，由子 view 的 dispatchTouchEvent 再来开始这个事件的分发。如果事件传递到某一层的子 view 的 onTouchEvent 上了，这个方法返回了 false ，那么这个事件会从这个 view 往上传递，都是 onTouchEvent 来接收。而如果传递到最上面的 onTouchEvent 也返回 false 的话，这个事件就会“消失”，而且接收不到下一次事件。
+
+**二、为什么View有dispatchTouchEvent方法？**
+
+因为View可以注册很多事件的监听器，如长按、滑动、点击等，它也需要一个管理者来分发
+
+**三、ViewGroup中可能有很多个子View，如何判断应该分配给哪一个？**
+
+根据源码可知，它会分配给在点击范围内的子View
+
+**四、当点击时，子View重叠应该如何分配？**
+
+一般分配给最上层的子View，这是由于安卓的渲染机制导致的
+
+
+
