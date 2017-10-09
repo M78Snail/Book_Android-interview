@@ -2,7 +2,7 @@ ListView的优化
 
 * 重用convertView
 
-```
+```java
 public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.section_list_item1, null);
