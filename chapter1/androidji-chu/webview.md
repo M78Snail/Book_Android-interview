@@ -20,7 +20,14 @@
 
 > 6、WebView硬件加速
 
-*  Android3.0引入硬件加速，默认会开启，WebView在硬件加速的情况下滑动更加平滑，性能更加好，但是会出现白块或者页面闪烁的副作用，建议WebView暂时关闭硬件加速
+* Android3.0引入硬件加速，默认会开启，WebView在硬件加速的情况下滑动更加平滑，性能更加好，但是会出现白块或者页面闪烁的副作用，建议WebView暂时关闭硬件加速
+
+> 7、WebView内存泄漏
+
+由于WebView是依附于Activity的，Activity的生命周期和WebView启动的线程的生命周期是不一致的，这会导致WebView一直持有对这个Activity的引用而无法释放，解决方案如下
+
+* 独立进程，简单暴力，不过可能涉及到进程间通信（推荐）
+* 动态添加WebView，对传入WebView中使用的Context使用弱引用
 
 
 
