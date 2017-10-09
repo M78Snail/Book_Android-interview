@@ -18,6 +18,11 @@
     * [BroadCast](chapter1/androidji-chu/broadcast.md)
     * [WebView](chapter1/androidji-chu/webview.md)
     * [Binder](chapter1/androidji-chu/binder.md)
+  * [异步消息处理机制](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi.md)
+    * [Handler](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/handler.md)
+    * Asynctask
+    * HandlerThread
+    * IntentService
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
@@ -28,7 +33,7 @@
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
   * [Merge、ViewStub的作用](chapter1/mergeviewstubde-zuo-yong.md)
   * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
-  * Android基础
+  * 异步消息处理机制
   * [Handler、Looper消息队列模型，各部分的作用](chapter1/handlerlooperxiao-xi-dui-lie-mo-xing-ff0c-ge-bu-fen-de-zuo-yong.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
