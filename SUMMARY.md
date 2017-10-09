@@ -15,9 +15,9 @@
       * [Service与Activity通信](chapter1/androidji-chu/service/serviceyu-activity-tong-xin.md)
       * [怎么保证Service不被杀死](chapter1/androidji-chu/service/zen-yao-bao-zheng-service-bu-bei-sha-si.md)
       * [什么是IntentService？有何优点？](chapter1/androidji-chu/service/shi-yao-shi-intentservice-ff1f-you-he-you-dian-ff1f.md)
-    * Binder
-    * WebView
     * BroadCast
+    * WebView
+    * [Binder](chapter1/androidji-chu/binder.md)
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
@@ -103,4 +103,10 @@
   * [IP地址分类](tcpip-yu-http/ipdi-zhi-fen-lei.md)
   * [路由器和交换机的区别](tcpip-yu-http/lu-you-qi-he-jiao-huan-ji-de-qu-bie.md)
   * [为什么需要3次握手与4次握手](tcpip-yu-http/wei-shi-yao-xu-yao-3-ci-wo-shou-yu-4-ci-wo-shou.md)
+* [项目经历](xiang-mu-jing-li.md)
+* Java基础
+* 设计模式
+* 网络相关知识
+* Android源码
+* 开源库源码
 
