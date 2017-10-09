@@ -31,7 +31,6 @@
   * [Android的数据存储形式](chapter1/androidde-shu-ju-cun-chu-xing-shi.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
-  * ListView
   * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
