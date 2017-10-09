@@ -20,7 +20,7 @@
     * [Binder](chapter1/androidji-chu/binder.md)
   * [异步消息处理机制](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi.md)
     * [Handler](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/handler.md)
-    * Asynctask
+    * [Asynctask](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/asynctask.md)
     * HandlerThread
     * IntentService
   * [广播的两种注册方法](chapter1/guang-bo-de-liang-zhong-zhu-ce-fang-fa-ff0c-you-shi-yao-qu-bie.md)
