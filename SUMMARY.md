@@ -28,7 +28,6 @@
   * [ListView](chapter1/listview.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
-  * [View绘制流程](chapter1/viewhui-zhi-liu-cheng.md)
   * [Android的数据存储形式](chapter1/androidde-shu-ju-cun-chu-xing-shi.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
