@@ -110,7 +110,7 @@
   * [死锁](javaji-chu/si-suo.md)
 * [设计模式](she-ji-mo-shi.md)
   * 适配器模式
-  * 装饰者模式
+  * [装饰者模式](she-ji-mo-shi/zhuang-shi-zhe-mo-shi.md)
   * 外观模式
   * [适配器 VS 装饰者 VS 桥接 VS 代理 VS 外观](she-ji-mo-shi/shi-pei-qi-vs-zhuang-shi-zhe-vs-qiao-jie-vs-dai-li-vs-wai-guan.md)
 * 网络相关知识
