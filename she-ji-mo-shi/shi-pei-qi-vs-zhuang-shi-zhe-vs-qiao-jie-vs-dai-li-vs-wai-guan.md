@@ -1,6 +1,6 @@
 ## **适配器VS装饰者VS桥接VS代理VS外观** {#适配器-vs-装饰者-vs-桥接-vs-代理-vs-外观}
 
-### [**适配器模式**](http://blog.csdn.net/self_study/article/details/51585664)（Adapter） {#适配器模式}
+### [**适配器模式**](http://blog.csdn.net/self_study/article/details/51585664)（电源插头/Adapter） {#适配器模式}
 
 适配器模式是将两个不兼容的类融合在一起
 
