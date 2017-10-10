@@ -30,7 +30,10 @@
     * [ANR](chapter1/androidqi-ta/anr.md)
     * [OOM](chapter1/androidqi-ta/oom.md)
     * [Bitmap](chapter1/androidqi-ta/bitmap.md)
-    * UI卡顿面试题
+    * [UI卡顿面试题](chapter1/androidqi-ta/uiqia-dun-mian-shi-ti.md)
+    * [内存泄漏](chapter1/androidqi-ta/nei-cun-xie-lou.md)
+    * [内存管理](chapter1/androidqi-ta/nei-cun-guan-li.md)
+    * [冷启动和热启动](chapter1/androidqi-ta/leng-qi-dong-he-re-qi-dong.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
