@@ -137,5 +137,105 @@ Iterator<Entry<String, String>> it2 = table.entrySet().iterator();
 | key和value都不允许为null，遇到null，直接返回 NullPointerException | key和value都允许为null，遇到key为null的时候，调用putForNullKey方法进行处理，而对value没有处理 |
 | hash数组默认大小是11，扩充方式是old\*2+1 | hash数组的默认大小是16，而且一定是2的指数 |
 
+## 八、多线程存在的问题 {#八、多线程存在的问题}
+
+1. 如果涉及到多线程同步时，建议采用HashTable
+2. 没有涉及到多线程同步时，建议采用HashMap
+3. Collections 类中存在一个静态方法：synchronizedMap\(\)，该方法创建了一个线程安全的 Map 对象，并把它作为一个封装的对象来返回
+
+synchronizedMap\(\)其实就是对Map的方法加层同步锁，从源码中可以看出
+
+```
+//Collections.synchronizedMap(Map<K, V>)	
+public static <K,V> Map<K,V> synchronizedMap(Map<K,V> m) {
+     return new SynchronizedMap<K,V>(m);
+}
+    
+private static class SynchronizedMap<K,V> implements Map<K,V>, Serializable {
+    private static final long serialVersionUID = 1978198479659022715L;
+    private final Map<K,V> m;     // Backing Map
+    //同步锁
+    final Object      mutex;        // Object on which to synchronize
+    SynchronizedMap(Map<K,V> m) {
+        if (m==null)
+            throw new NullPointerException();
+        this.m = m;
+        //把this本身作为锁监视器, 这样任何线程访问他的方法都要获取该监视器.
+        mutex = this;
+    }
+    SynchronizedMap(Map<K,V> m, Object mutex) {
+        this.m = m;
+        this.mutex = mutex;
+    }
+    public int size() {
+        synchronized(mutex) {return m.size();}
+    }
+    
+    //重写map的emty方法
+    public boolean isEmpty() {
+        synchronized(mutex) {return m.isEmpty();}
+    }
+    public boolean containsKey(Object key) {
+        synchronized(mutex) {return m.containsKey(key);}
+    }
+    public boolean containsValue(Object value) {
+        synchronized(mutex) {return m.containsValue(value);}
+    }
+    public V get(Object key) {
+        synchronized(mutex) {return m.get(key);}
+    }
+    public V put(K key, V value) {
+        synchronized(mutex) {return m.put(key, value);}
+    }
+    public V remove(Object key) {
+        synchronized(mutex) {return m.remove(key);}
+    }
+    public void putAll(Map<? extends K, ? extends V> map) {
+        synchronized(mutex) {m.putAll(map);}
+    }
+    public void clear() {
+        synchronized(mutex) {m.clear();}
+    }
+    private transient Set<K> keySet = null;
+    private transient Set<Map.Entry<K,V>> entrySet = null;
+    private transient Collection<V> values = null;
+	//重写keySet方法
+    public Set<K> keySet() {
+        synchronized(mutex) {
+            if (keySet==null)
+            	//mutex传给SynchronizedSet, 这样对于set内部操作也需要获取锁.
+                keySet = new SynchronizedSet<K>(m.keySet(), mutex);
+            return keySet;
+        }
+    }
+    public Set<Map.Entry<K,V>> entrySet() {
+        synchronized(mutex) {
+            if (entrySet==null)
+                entrySet = new SynchronizedSet<Map.Entry<K,V>>(m.entrySet(), mutex);
+            return entrySet;
+        }
+    }
+    public Collection<V> values() {
+        synchronized(mutex) {
+            if (values==null)
+                values = new SynchronizedCollection<V>(m.values(), mutex);
+            return values;
+        }
+    }
+    public boolean equals(Object o) {
+        synchronized(mutex) {return m.equals(o);}
+    }
+    public int hashCode() {
+        synchronized(mutex) {return m.hashCode();}
+    }
+    public String toString() {
+        synchronized(mutex) {return m.toString();}
+    }
+    private void writeObject(ObjectOutputStream s) throws IOException {
+        synchronized(mutex) {s.defaultWriteObject();}
+    }
+}
+```
+
 
 
