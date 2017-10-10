@@ -35,19 +35,11 @@
     * [内存管理](chapter1/androidqi-ta/nei-cun-guan-li.md)
     * [冷启动和热启动](chapter1/androidqi-ta/leng-qi-dong-he-re-qi-dong.md)
     * [其他优化](chapter1/androidqi-ta/qi-ta-you-hua.md)
-  * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
-  * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
-  * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
-  * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
+  * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
   * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
-  * [Android中弱引用与软引用的应用场景](chapter1/androidzhong-ruo-yin-yong-yu-ruan-yin-yong-de-ying-yong-chang-jing.md)
-  * [Bitmap的四中属性，与每种属性队形的大小](chapter1/bitmapde-si-zhong-shu-xing-ff0c-yu-mei-zhong-shu-xing-dui-xing-de-da-xiao.md)
-  * [View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)](chapter1/viewyu-view-group-fen-lei-ff0c-zi-ding-yi-view-guo-cheng-ff1a-onmeasure-onlayout-ondraw.md)
-  * [Touch事件分发机制](chapter1/touchshi-jian-fen-fa-ji-zhi.md)
   * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
-  * Android其他
 * [JVM](dw.md)
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
@@ -111,11 +103,14 @@
   * [为什么需要3次握手与4次握手](tcpip-yu-http/wei-shi-yao-xu-yao-3-ci-wo-shou-yu-4-ci-wo-shou.md)
 * [项目经历](xiang-mu-jing-li.md)
 * Java基础
-* 设计模式
+* [设计模式](she-ji-mo-shi.md)
+  * 适配器模式
+  * 装饰者模式
+  * 外观模式
 * 网络相关知识
 * [Android源码](androidyuan-ma.md)
 * [开源库源码](kai-yuan-ku-yuan-ma.md)
-  * Glide
+  * [Glide](kai-yuan-ku-yuan-ma/glide.md)
   * OkHttp
   * [Retrofit](kai-yuan-ku-yuan-ma/retrofit.md)
 
