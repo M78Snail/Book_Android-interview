@@ -112,6 +112,7 @@
   * 适配器模式
   * 装饰者模式
   * 外观模式
+  * [适配器 VS 装饰者 VS 桥接 VS 代理 VS 外观](she-ji-mo-shi/shi-pei-qi-vs-zhuang-shi-zhe-vs-qiao-jie-vs-dai-li-vs-wai-guan.md)
 * 网络相关知识
 * [Android源码](androidyuan-ma.md)
 * [开源库源码](kai-yuan-ku-yuan-ma.md)
