@@ -102,7 +102,8 @@
   * [路由器和交换机的区别](tcpip-yu-http/lu-you-qi-he-jiao-huan-ji-de-qu-bie.md)
   * [为什么需要3次握手与4次握手](tcpip-yu-http/wei-shi-yao-xu-yao-3-ci-wo-shou-yu-4-ci-wo-shou.md)
 * [项目经历](xiang-mu-jing-li.md)
-* Java基础
+* [Java基础](javaji-chu.md)
+  * [HashMap源码分析及面试题解答](javaji-chu/hashmapyuan-ma-fen-xi-ji-mian-shi-ti-jie-da.md)
 * [设计模式](she-ji-mo-shi.md)
   * 适配器模式
   * 装饰者模式
