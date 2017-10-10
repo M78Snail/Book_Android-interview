@@ -107,6 +107,7 @@
   * HashSet源码分析
   * [HashTable源码分析](javaji-chu/hashtableyuan-ma-fen-xi.md)
   * [ConcurrentHashMap源码分析](javaji-chu/concurrenthashmapyuan-ma-fen-xi.md)
+  * [死锁](javaji-chu/si-suo.md)
 * [设计模式](she-ji-mo-shi.md)
   * 适配器模式
   * 装饰者模式
