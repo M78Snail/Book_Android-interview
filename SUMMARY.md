@@ -26,12 +26,11 @@
   * [视图工作机制](chapter1/shi-tu-gong-zuo-ji-zhi.md)
   * [事件分发机制](chapter1/shi-jian-fen-fa-ji-zhi.md)
   * [ListView](chapter1/listview.md)
+  * [Android异常与优化](chapter1/androidqi-ta.md)
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
-  * [Android的数据存储形式](chapter1/androidde-shu-ju-cun-chu-xing-shi.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
   * [Android中的MVP模式](chapter1/androidzhong-de-mvc-mo-shi.md)
-  * [Json有什么优劣势](chapter1/jsonyou-shi-yao-you-lie-shi.md)
   * [怎样退出终止App](chapter1/zen-yang-tui-chu-zhong-zhi-app.md)
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
   * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
@@ -40,7 +39,7 @@
   * [View与View Group分类，自定义View过程：onMeasure\(\)、onLayout\(\)、onDraw\(\)](chapter1/viewyu-view-group-fen-lei-ff0c-zi-ding-yi-view-guo-cheng-ff1a-onmeasure-onlayout-ondraw.md)
   * [Touch事件分发机制](chapter1/touchshi-jian-fen-fa-ji-zhi.md)
   * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
-  * [Zygote的启动过程](chapter1/zygotede-qi-dong-guo-cheng.md)
+  * Android其他
 * [JVM](dw.md)
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
@@ -107,5 +106,8 @@
 * 设计模式
 * 网络相关知识
 * [Android源码](androidyuan-ma.md)
-* 开源库源码
+* [开源库源码](kai-yuan-ku-yuan-ma.md)
+  * Glide
+  * OkHttp
+  * [Retrofit](kai-yuan-ku-yuan-ma/retrofit.md)
 
