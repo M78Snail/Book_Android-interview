@@ -27,6 +27,10 @@
   * [事件分发机制](chapter1/shi-jian-fen-fa-ji-zhi.md)
   * [ListView](chapter1/listview.md)
   * [Android异常与优化](chapter1/androidqi-ta.md)
+    * [ANR](chapter1/androidqi-ta/anr.md)
+    * [OOM](chapter1/androidqi-ta/oom.md)
+    * [Bitmap](chapter1/androidqi-ta/bitmap.md)
+    * UI卡顿面试题
   * [Intent可以传递哪些数据类型](chapter1/intentde-shi-yong-fang-fa-ff0c-ke-yi-chuan-di-na-xie-shu-ju-lei-xing.md)
   * [ContentProvider使用方法](chapter1/contentprovidershi-yong-fang-fa.md)
   * [SQLite的基本操作](chapter1/sqlitede-ji-ben-cao-zuo.md)
