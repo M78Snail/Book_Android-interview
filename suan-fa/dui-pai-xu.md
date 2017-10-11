@@ -24,11 +24,11 @@
 
 通常堆是通过一维数组来实现的。在数组起始位置为0的情形中：
 
-* 父节点i的左子节点在位置\(2\*i+1\);　
+* 父节点i的左子节点在位置\(2\*i+1\);
 
 * 父节点i的右子节点在位置\(2\*i+2\);
 
-* 子节点i的父节点在位置floor\(\(i-1\)/2\);　
+* 子节点i的父节点在位置floor\(\(i-1\)/2\);
 
 **Java代码实现**
 
@@ -49,7 +49,7 @@ public class HeapSort {
             maxHeapify(data, data.length, i);
         }
     }
-    
+
     /**
      * 创建最大堆
      * @param data
@@ -60,7 +60,7 @@ public class HeapSort {
         // 当前点与左右子节点比较
         int left = getChildLeftIndex(index);
         int right = getChildRightIndex(index);
-        
+
         int largest = index;
         if (left < heapSize && data[index] < data[left]) {
             largest = left;
@@ -76,7 +76,7 @@ public class HeapSort {
             maxHeapify(data, heapSize, largest);
         }
     }
-    
+
     /**
      * 排序，最大值放在末尾，data虽然是最大堆，在排序后就成了递增的
      * @param data
@@ -90,7 +90,7 @@ public class HeapSort {
             maxHeapify(data, i, 0);
         }
     }
-    
+
     /**
      * 父节点位置
      * @param current
@@ -99,7 +99,7 @@ public class HeapSort {
     private static int getParentIndex(int current){
         return (current - 1) >> 1;
     }
-    
+
     /**
      * 左子节点position注意括号，加法优先级更高
      * @param current
@@ -108,7 +108,7 @@ public class HeapSort {
     private static int getChildLeftIndex(int current){
         return (current << 1) + 1;
     }
-    
+
     /**
      * 右子节点position
      * @param current
@@ -117,7 +117,7 @@ public class HeapSort {
     private static int getChildRightIndex(int current){
         return (current << 1) + 2;
     }
-    
+
     private static void print(int[] data){
         for (int i = 0; i < data.length; i++) {
             System.out.print(data[i] + " |");

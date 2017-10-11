@@ -112,7 +112,7 @@ reg[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
             reg[k++] = arr[start1++];
         while (start2 <= end2)
             reg[k++] = arr[start2++];
-            
+
         //借用reg数组做合并，然后把数据存回arr中
         for (k = start; k <= end; k++)
             arr[k] = reg[k];
