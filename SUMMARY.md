@@ -18,6 +18,7 @@
     * [BroadCast](chapter1/androidji-chu/broadcast.md)
     * [WebView](chapter1/androidji-chu/webview.md)
     * [Binder](chapter1/androidji-chu/binder.md)
+    * [android中layout\_weight的理解](chapter1/androidji-chu/androidzhong-layout-weight-de-li-jie.md)
   * [异步消息处理机制](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi.md)
     * [Handler](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/handler.md)
     * [Asynctask](chapter1/yi-bu-xiao-xi-chu-li-ji-zhi/asynctask.md)
