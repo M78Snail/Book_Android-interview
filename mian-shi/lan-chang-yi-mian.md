@@ -78,5 +78,7 @@ AssetManager.loadResourceValue\(int ident, short density, TypedValue outValue, b
 
    c\) 对过滤后的resource进行最佳适配，找到最符合的entry文件。因为之前已经将不符合的，即大分辨率的entry已经被过滤掉了，所以这里就找剩下的最大的就是最佳适配的。实现在frameworks/base/include/utils/ResourceTypes.h中ResTable\_config的isBetterThan\(\)函数中。
 
+> ANR的原理（回答主线程5秒阻塞是不行的，要读源码）
+
 
 
