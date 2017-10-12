@@ -33,5 +33,33 @@
    * 图片缓存
    * Bitmap压缩加载
 
+> 适配器模式，装饰者模式，外观模式的异同？
+
+* 适配器模式是让两个不相融的类打动可以互融的作用
+* 装饰者模式是给一个对象动态的添加某些属性
+* 外观模式模式是为各个子系统提供一个高度统一的接口给用户使用
+
+> ANR 如何产生？
+
+在Android里，应用程序的响应性是由Activity Manager和WindowManager系统服务监视的。当它监测到以下情况中的一个时，Android就会针对特定的应用程序显示ANR：
+
+1. 在5秒内没有响应输入的事件（例如，按键按下，屏幕触摸）
+2. BroadcastReceiver在10秒内没有执行完毕
+
+造成以上两点的原因有很多，比如在主线程中做了非常耗时的操作，比如说是下载，io异常等。
+
+> Stringbuffer 与Stringbuilder 的区别？
+
+Stringbuffer线程安全，效率相对低一些，Stringbuilder线程不安全，效率相对高一些
+
+> 如何保证线程安全？
+
+1. synchronized
+2. ThreadLoacl（本质上获取Thread的ThreadLocalMap产生一个副本）
+3. ReentrantLock和Condition（模拟阻塞队列）
+4. Semaphore信号量（模拟食堂打饭，3个窗口5个人打饭）
+5. CyclicBarrier循环栅栏（多个线程等待，达到某个数量放行）
+6. 闭锁CountDownLatch（多个线程先执行，执行数量达到一定后再执行）
+
 
 
