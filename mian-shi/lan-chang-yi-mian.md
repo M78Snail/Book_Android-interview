@@ -24,5 +24,19 @@ UI对象—-&gt;CPU处理为多维图形,纹理 —–通过OpeGL ES接口调用
 
    编译R.java类需要用到AndroidSDK提供的aapt工具
 
+2. **第二步：处理AIDL文件，生成对应的.java文件**
+
+3. **第三步：编译Java文件，生成对应的.class文件**
+
+4. **第四步：把.class文件转化成Davik VM支持的.dex文件**
+
+   **将工程bin目录下的class文件编译成classes.dex，Android虚拟机只能执行dex文件!**
+
+5. **第五步：打包生成未签名的.apk文件**
+
+6. **第六步：对未签名.apk文件进行签名**
+
+7. **第七步：对签名后的.apk文件进行对齐处理（不进行对齐处理是不能发布到Google Market的）**
+
 
 
