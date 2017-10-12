@@ -61,5 +61,33 @@ Stringbuffer线程安全，效率相对低一些，Stringbuilder线程不安全�
 5. CyclicBarrier循环栅栏（多个线程等待，达到某个数量放行）
 6. 闭锁CountDownLatch（多个线程先执行，执行数量达到一定后再执行）
 
+> Java四中引用
+
+强，软，弱，虚。
+
+> Jni 用过么？
+>
+> 多进程场景遇见过么？
+
+> sqlite升级，增加字段的语句
+
+ALTER TABLE tableName ADD COLUMN message VARCHAR
+
+> bitmap recycler 相关
+
+> 强引用置为null，会不会被回收？
+
+> glide 使用什么缓存？
+
+* 缓存Resource使用三层缓存，包括：
+
+  1. 一级缓存：缓存被回收的资源，使用LRU算法（Least Frequently Used，最近最少使用算法）。当需要再次使用到被回收的资源，直接从内存返回。
+  2. 二级缓存：使用弱引用缓存正在使用的资源。当系统执行gc操作时，会回收没有强引用的资源。使用弱引用缓存资源，既可以缓存正在使用的强引用资源，也不阻碍系统需要回收无引用资源。
+  3. 三级缓存：磁盘缓存。网络图片下载成功后将以文件的形式缓存到磁盘中。
+
+* #### Bitmap缓存算法 {#Bitmap缓存算法}
+
+  在Glide中，使用BitmapPool来缓存Bitmap,使用的也是LRU算法。当需要使用Bitmap时，从Bitmap的池子中取出合适的Bitmap,若取不到合适的，则再新创建。当Bitmap使用完后，不直接调用Bitmap.recycler\(\)回收，而是放入Bitmap的池子。
+
 
 
