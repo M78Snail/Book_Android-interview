@@ -60,23 +60,23 @@ AssetManager.loadResourceValue\(int ident, short density, TypedValue outValue, b
 
 1. 最后加载的是哪个xml是由Resources.getValue\(int id, TypedValue outValue, boolean resolveRefs\)调用完成之后的outValue.string决定的，因为outValue.string的值就是你的资源文件的具体路径，如：
 
-   　　1\) xxx/values/xxx.xml
+   1\) xxx/values/xxx.xml
 
-   　　2\) xxx/layout-sw600dp/xxx.xml
+   2\) xxx/layout-sw600dp/xxx.xml
 
 2. AssetManager.loadResourceValue\(\)调的是frameworks/base/core/jni/android\_util\_AssetManager.cpp里面的native方法， 如何获得正确的outValue值，在native方法俩面主要有以下几步：
 
-   　　1\) 调用frameworks/base/libs/utils/ResourceTypes.cpp 的ResTable::getResource\(\)，遍历所有资源文件
+   1\) 调用frameworks/base/libs/utils/ResourceTypes.cpp 的ResTable::getResource\(\)，遍历所有资源文件
 
-   　　2\) 在ResTable::getResource\(\)里面调用ResTable::getEntry\(\)来确定资源文件来自哪个entry，即layout,或者layout-swdp，由此可见，ResTable::getEntry\(\)是我们这个问题的关键
+   2\) 在ResTable::getResource\(\)里面调用ResTable::getEntry\(\)来确定资源文件来自哪个entry，即layout,或者layout-swdp，由此可见，ResTable::getEntry\(\)是我们这个问题的关键
 
-   　　3\) 在ResTable::getEntry\(\)里面：
+   3\) 在ResTable::getEntry\(\)里面：
 
-   　　　　a\) 首先获取本设备的configurion信息，屏幕分辨率，屏幕大小，locale，横竖屏等。
+   a\) 首先获取本设备的configurion信息，屏幕分辨率，屏幕大小，locale，横竖屏等。
 
-   　　　　b\) 根据得到的本设备的configurion信息，过滤掉不适应本设备的entry，比如设备是800x480的，那么超过此分辨率的资源\(例：layout-sw600dp\)就要被过滤掉，实现在frameworks/base/include/utils/ResourceTypes.h中ResTable\_config的match函数中
+   b\) 根据得到的本设备的configurion信息，过滤掉不适应本设备的entry，比如设备是800x480的，那么超过此分辨率的资源\(例：layout-sw600dp\)就要被过滤掉，实现在frameworks/base/include/utils/ResourceTypes.h中ResTable\_config的match函数中
 
-   　　　　c\) 对过滤后的resource进行最佳适配，找到最符合的entry文件。因为之前已经将不符合的，即大分辨率的entry已经被过滤掉了，所以这里就找剩下的最大的就是最佳适配的。实现在frameworks/base/include/utils/ResourceTypes.h中ResTable\_config的isBetterThan\(\)函数中。
+   c\) 对过滤后的resource进行最佳适配，找到最符合的entry文件。因为之前已经将不符合的，即大分辨率的entry已经被过滤掉了，所以这里就找剩下的最大的就是最佳适配的。实现在frameworks/base/include/utils/ResourceTypes.h中ResTable\_config的isBetterThan\(\)函数中。
 
 
 
