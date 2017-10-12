@@ -41,6 +41,7 @@
   * [Asset目录与res目录的区别](chapter1/assetmu-lu-yu-res-mu-lu-de-qu-bie.md)
   * [Android内存优化方法：ListView优化，及时关闭资源，图片缓存等等](chapter1/androidnei-cun-you-hua-fang-fa-ff1a-listview-you-hua-ff0c-ji-shi-guan-bi-zi-yuan-ff0c-tu-pian-huan-cun-deng-deng.md)
   * [Android长连接，怎么处理心跳机制](chapter1/androidchang-lian-jie-ff0c-zen-yao-chu-li-xin-tiao-ji-zhi.md)
+  * [Android压缩图片后再上传图片](chapter1/androidya-suo-tu-pian-hou-zai-shang-chuan-tu-pian.md)
 * [JVM](dw.md)
   * [内存模型以及分区，需要详细到每个区放什么](dw/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
   * [堆里面的分区：Eden，survival from to，老年代，各自的特点](dw/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
